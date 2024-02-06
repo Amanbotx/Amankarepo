@@ -429,13 +429,6 @@ async def start(client, message):
         await k.edit_text("<b>Your All Files/Videos is successfully deleted!!!</b>")
         return
         
-            filesarr.append(msg)
-        k = await client.send_sticker(sticker="CAACAgUAAxkBAAEKRaNk_u0HQXLjZfHrRgkjcseNmvrK_gACJwEAAsiUZBTiPWKAkUSmmjAE")
-        await asyncio.sleep(600)
-        for x in filesarr:
-            await x.delete()
-        await k.edit_sticker(sticker="CAACAgUAAxkBAAEKRaFk_uzdXo_uugN0YeogUUimYNKHsgACPAUAAm2DsFTEKVYFc4R6LTAE")
-        return    
         
     elif data.startswith("files"):
         current_time = datetime.now(pytz.timezone(TIMEZONE))
