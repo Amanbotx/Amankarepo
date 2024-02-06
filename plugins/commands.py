@@ -214,6 +214,9 @@ async def start(client, message):
                             ],
                             [
                                 InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/HP_MOVIES_WORLD') #Don't change anything without contacting me @LazyDeveloperr
+                            ],
+                            [
+                                InlineKeyboardButton('❌ ᴄʟᴏꜱᴇ ❌', callback_data='close_data')
                             ]
                         ]
                     )
@@ -233,6 +236,9 @@ async def start(client, message):
                             ],
                             [
                                 InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/HP_MOVIES_WORLD') #Don't change anything without contacting me @LazyDeveloperr
+                            ],
+                            [
+                                InlineKeyboardButton('❌ ᴄʟᴏꜱᴇ ❌', callback_data='close_data')
                             ]
                         ]
                     )
@@ -417,6 +423,9 @@ async def start(client, message):
              ],
              [
               InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/HP_MOVIES_WORLD') #Don't change anything without contacting me @LazyDeveloperr
+             ],
+             [
+              InlineKeyboardButton('❌ ᴄʟᴏꜱᴇ ❌', callback_data='close_data')
              ]
             ]
         )
@@ -495,6 +504,9 @@ async def start(client, message):
              ],
              [
               InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/HP_MOVIES_WORLD') #Don't change anything without contacting me @LazyDeveloperr
+             ],
+             [
+              InlineKeyboardButton('❌ ᴄʟᴏꜱᴇ ❌', callback_data='close_data')
              ]
             ]
         )
@@ -555,6 +567,9 @@ async def start(client, message):
              ],
              [
               InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/HP_MOVIES_WORLD') #Don't change anything without contacting me @LazyDeveloperr
+             ],
+             [
+              InlineKeyboardButton('❌ ᴄʟᴏꜱᴇ ❌', callback_data='close_data')
              ]
             ]
         )
