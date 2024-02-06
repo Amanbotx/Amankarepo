@@ -1480,6 +1480,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton("ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿", url=spidy_stream)
                 ],[
                     InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url='https://t.me/HP_MOVIES_WORLD')
+                ],[
+                    InlineKeyboardButton('❌ ᴄʟᴏꜱᴇ ❌', callback_data='close_data')
                 ]]
             query.message.reply_markup = query.message.reply_markup or []
             query.message.reply_markup.inline_keyboard.pop(0)
