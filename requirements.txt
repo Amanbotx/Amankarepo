@@ -20,6 +20,7 @@ pyrogram>=2.0.30
  #---others----# 
  opencv-python-headless==4.7.0.68 
  python-dotenv==0.21.1 
+ telegraph==2.2.0
  speedtest==0.0.1 
  humanize==4.6.0 
  Pillow==9.4.0 
