@@ -14,7 +14,7 @@ class script(object):
 ├⍟ 📕 Lɪʙʀᴀʀy : <a href=https://docs.pyrogram.org/>PROGRAM</a>
 ├⍟ ✏️ Lᴀɴɢᴜᴀɢᴇ: <a href=https://www.python.org>Pyᴛʜᴏɴ 3</a>
 ├⍟ 💾 Dᴀᴛᴀ Bᴀꜱᴇ: <a href=https://cloud.mongodb.com>Mᴏɴɢᴏ DB</a>
-├⍟ 📊 Bᴜɪʟᴅ Vᴇʀꜱɪᴏɴ: Rᴇɴᴀᴍᴇʀ V3.0.0</a></b>
+├⍟ 📊 BUILD STATUS: v4.2 [STABLE]</a></b>
 ╰───────────────⍟</b>"""
     
     CHANNELS = """
