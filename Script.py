@@ -25,13 +25,13 @@ class script(object):
 ▫ ғʀᴇᴇ & ᴇᴀsʏ ᴛᴏ ᴜsᴇ.
 ▫ 𝟸𝟺x𝟽 sᴇʀᴠɪᴄᴇs ᴀᴠᴀɪʟᴀʙʟᴇ.</b>"""
     
-    STATUS_TXT = """<b>    
-‣ ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{}</code>
-‣ ᴛᴏᴛᴀʟ ᴜꜱᴇʀꜱ : <code>{}</code>
-‣ ᴛᴏᴛᴀʟ ɢʀᴏᴜᴘꜱ : <code>{}</code>
-‣ ᴜꜱᴇᴅ ꜱᴛᴏʀᴀɢᴇ : <code>{}</code>
-‣ ꜰʀᴇᴇ ꜱᴛᴏʀᴀɢᴇ : <code>{}</code>
-</b>"""
+    STATUS_TXT = """<b>╭────[ YD Aᴜᴛᴏ Bᴏᴛ³™ ]────⍟
+├⍟ Tᴏᴛᴀʟ Fɪʟᴇs : <code>{}</code>
+├⍟ Tᴏᴛᴀʟ Usᴇʀs : <code>{}</code>
+├⍟ Tᴏᴛᴀʟ Cʜᴀᴛs : <code>{}</code>
+├⍟ Usᴇᴅ Sᴛᴏʀᴇɢᴇ : <code>{}</code>
+├⍟ Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ : <code>{}</code>
+╰───────────────⍟</b>"""
 
     LOG_TEXT_G = """#NewGroup
     
