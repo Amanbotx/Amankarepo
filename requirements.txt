@@ -16,21 +16,10 @@ pyrogram>=2.0.30
  #Telethroid==0.0.10 
  PyLeaves==1.0.2 
   
-
- #---ytdl----# 
- ffmpeg
-youtube_search
-youtube-search-python==1.4.6
-yt-dlp
-youtube-dl
-requests 
-
-openai==0.25.0
-
+  
  #---others----# 
  opencv-python-headless==4.7.0.68 
  python-dotenv==0.21.1 
- telegraph==2.2.0
  speedtest==0.0.1 
  humanize==4.6.0 
  Pillow==9.4.0 
@@ -45,14 +34,46 @@ openai==0.25.0
  ### googletrans==4.0.0-rc1 ###
 python-decouple
 ffmpeg-python>=0.2.0
-ytthumb
 
 jinja2
 apscheduler
 pyshorteners
 pyromod
 colorama
-openai==0.25.0
+
+# Some Feature added by - Vansh-Yadav ( Telegram - @None_090 )
+Heroku3
+search_engine_parser
+wget
+aiofiles
+ffmpeg-python
+ffmpeg
+youtube-search-python==1.4.6
+yt-dlp
+youtube-dl
+youtube_search
+requests
+gTTS
+googletrans==3.1.0a0
+telegraph
+PyPDF2
+ujson
+pyshorteners
 countryinfo
+datetime
+pytz
+python-math
+Pillow
+speedtest-cli
+python-dotenv
+Flask==2.2.2
+gunicorn==20.1.0
+aiohttp
+ytthumb
+YoutubeTags
+dnspython==2.3.0
+openai
+
+
 
   
