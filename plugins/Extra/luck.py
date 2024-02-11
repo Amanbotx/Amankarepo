@@ -1,6 +1,4 @@
 from pyrogram import Client, filters, enums
-from info import COMMAND_HAND_LER
-from plugins.helper_functions.cust_p_filters import f_onw_fliter
 
 # LUCK------------ https://telegram.me/NobiDeveloper ------------ #
 
