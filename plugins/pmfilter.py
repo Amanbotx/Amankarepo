@@ -1669,12 +1669,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('• ʙʀᴏɴᴢᴇ •', callback_data='broze'),
             InlineKeyboardButton('• ꜱɪʟᴠᴇʀ •', callback_data='silver')
         ],[
-            InlineKeyboardButton('• ɢᴏʟᴅ •', callback_data='gold'),
+            InlineKeyboardButton('• ɢᴏʟᴅ •', callback_data='amann'),
             InlineKeyboardButton('• ᴘʟᴀᴛɪɴᴜᴍ •', callback_data='platinum'),
-            InlineKeyboardButton('• ᴘʟᴀᴛɪɴᴜᴍ •', callback_data='platinum')
+            InlineKeyboardButton('• ᴘʟᴀᴛɪɴᴜᴍ •', callback_data='amann')
         ],[
-            InlineKeyboardButton('• ᴅɪᴀᴍᴏɴᴅ •', callback_data='diamond'),
-            InlineKeyboardButton('• ᴏᴛʜᴇʀ •', callback_data='other')
+            InlineKeyboardButton('• ᴅɪᴀᴍᴏɴᴅ •', callback_data='amann'),
+            InlineKeyboardButton('• ᴏᴛʜᴇʀ •', callback_data='amann')
         ],[            
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
         ]]
@@ -1684,8 +1684,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.PLAN_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-     )
+        )
     
+    elif query.data == "amann":
+            btn = [[
+                    InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="about")
+                  ]]
+            reply_markup = InlineKeyboardMarkup(btn)
+            await query.message.edit_text(
+                text=(script.AMAN_TXT),
+                reply_markup=reply_markup,
+                parse_mode=enums.ParseMode.HTML 
+        )
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('⇇ ʙᴀᴄᴋ', callback_data='about'),
