@@ -1,4 +1,3 @@
-import wikipedia
 from pyrogram import Client, filters
 
 @Client.on_message(filters.command('wikipedia'))
