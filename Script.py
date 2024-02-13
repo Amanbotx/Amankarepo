@@ -675,7 +675,7 @@ NOTE:
 
 /yttags - Reply to a YouTube video."""
 
-    YT-THUMB_TXT = """ʏᴛ-ᴛʜᴜᴍʙ
+    YTTHUMB_TXT = """ʏᴛ-ᴛʜᴜᴍʙ
 
 ʜᴇʟᴘs ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴʏ ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ ᴛʜᴜᴍʙɴᴀɪʟ
 
