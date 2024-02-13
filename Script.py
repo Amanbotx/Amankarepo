@@ -512,7 +512,7 @@ special Thanks To ❤️ Developer -
 • /disconnect  - ᴅɪꜱᴄᴏɴɴᴇᴄᴛ ꜰʀᴏᴍ ᴀ ᴄʜᴀᴛ
 • /connections - ʟɪꜱᴛ ᴀʟʟ ʏᴏᴜʀ ᴄᴏɴɴᴇᴄᴛɪᴏɴꜱ."""
 
-    AUTO_TXT == """ᴇxᴛʀᴀ  ᴍᴏᴅᴜʟᴇꜱ
+    AUTO_TXT = """ᴇxᴛʀᴀ  ᴍᴏᴅᴜʟᴇꜱ
 
 ɴᴏᴛᴇ :
 ᴛʜᴇꜱᴇ ᴀʀᴇ ᴛʜᴇ ᴇxᴛʀᴀ ꜰᴇᴀᴛᴜʀᴇꜱ ᴏꜰ ᴛʜɪꜱ ʙᴏᴛ
