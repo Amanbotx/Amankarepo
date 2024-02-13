@@ -1685,7 +1685,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('• COUNTRY •', callback_data='COUNTRY'), 
             InlineKeyboardButton('• G-TRANS •', callback_data='GTRANS'),
         ],[        
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start'),
+            InlineKeyboardButton("⇋ NEXT ⇋", callback_data="amann")
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1695,6 +1696,37 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
 
             )
+    elif query.data == "amann":
+        buttons = [[
+            InlineKeyboardButton('• FILTER •', callback_data='FILTER'),
+            InlineKeyboardButton('• AUTO •', callback_data='AUTO'),
+            InlineKeyboardButton('• CONNECT •', callback_data='CONNECT'),
+        ],[
+            InlineKeyboardButton('• EXTRA •', callback_data='EXTRA'),
+            InlineKeyboardButton('• SONG •', callback_data='SONG'),
+            InlineKeyboardButton('• TTS •', callback_data='TTS'),
+        ],[
+            InlineKeyboardButton('• T-GRAPH •', callback_data='TGRAPH'),
+            InlineKeyboardButton('• FONT •', callback_data='FONT'),
+            InlineKeyboardButton('• PING •', callback_data='PING')
+        ],[
+            InlineKeyboardButton('• JSONE •', callback_data='JSONE'),
+            InlineKeyboardButton('• ʙʀᴏɴᴢᴇ •', callback_data='broze'),
+            InlineKeyboardButton('• ᴏᴛʜᴇʀ •', callback_data='other')
+        ],[   
+            InlineKeyboardButton('• COUNTRY •', callback_data='COUNTRY'), 
+            InlineKeyboardButton('• G-TRANS •', callback_data='GTRANS'),
+        ],[        
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
+        ]]
+        
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.PLAN_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+
+        )
     elif query.data == "AUTO":
             btn = [[
                     InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="about")
