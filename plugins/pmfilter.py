@@ -1664,12 +1664,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     
     
-    elif query.data == "FILTER":
-            btn = [[
-                    InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="about")
-                  ]]
-            reply_markup = InlineKeyboardMarkup(btn)
-            await query.message.edit_texelif query.data == "premium_info":
+    elif query.data == "aman":
         buttons = [[
             InlineKeyboardButton('• FILTER •', callback_data='FILTER'),
             InlineKeyboardButton('• AUTO •', callback_data='AUTO'),
