@@ -167,8 +167,8 @@ async def next_page(bot, query):
             InlineKeyboardButton("⛔️  sᴜʙsᴄʀɪʙᴇ ᴏᴜʀ ʏᴛ ᴄʜᴀɴɴᴇʟ ​ ⛔️", url="https://youtube.com/@NobiDeveloper")
         ])
         btn.insert(0, [
-            InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-            InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data="premium_info")             
+            InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+            InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data="seeplans")             
         ])
     else:
         btn = []
@@ -183,8 +183,8 @@ async def next_page(bot, query):
             InlineKeyboardButton("⛔️  sᴜʙsᴄʀɪʙᴇ ᴏᴜʀ ʏᴛ ᴄʜᴀɴɴᴇʟ ​ ⛔️", url="https://youtube.com/@NobiDeveloper")
         ])
         btn.insert(0, [
-            InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-            InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data="premium_info")             
+            InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+            InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data="seeplans")             
         ])
     try:
         if settings['max_btn']:
@@ -402,8 +402,8 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("⛔️  sᴜʙsᴄʀɪʙᴇ ᴏᴜʀ ʏᴛ ᴄʜᴀɴɴᴇʟ ​ ⛔️", url="https://youtube.com/@NobiDeveloper")
         ])
         btn.insert(0, [
-            InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-            InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data="premium_info")             
+            InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+            InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data="seeplans")             
         ])
     else:
         btn = []
@@ -418,8 +418,8 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("⛔️  sᴜʙsᴄʀɪʙᴇ ᴏᴜʀ ʏᴛ ᴄʜᴀɴɴᴇʟ  ⛔️", url="https://youtube.com/@NobiDeveloper")
         ])
         btn.insert(0, [
-            InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-            InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data="premium_info")             
+            InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+            InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data="seeplans")             
         ])
 
     if offset != "":
@@ -586,8 +586,8 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("⛔️  sᴜʙsᴄʀɪʙᴇ ᴏᴜʀ ʏᴛ ᴄʜᴀɴɴᴇʟ ​ ⛔️", url="https://youtube.com/@NobiDeveloper")
         ])
         btn.insert(0, [
-            InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-            InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data="premium_info")             
+            InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+            InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data="seeplans")             
         ])
     else:
         btn = []
@@ -602,8 +602,8 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("⛔️  sᴜʙsᴄʀɪʙᴇ ᴏᴜʀ ʏᴛ ᴄʜᴀɴɴᴇʟ ​ ⛔️", url="https://youtube.com/@NobiDeveloper")
         ])
         btn.insert(0, [
-            InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-            InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data="premium_info")             
+            InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+            InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data="seeplans")             
         ])
         
     offset = 0
@@ -2112,8 +2112,8 @@ async def auto_filter(client, msg, spoll=False):
             InlineKeyboardButton("⛔️  sᴜʙsᴄʀɪʙᴇ ᴏᴜʀ ʏᴛ ᴄʜᴀɴɴᴇʟ ​ ⛔️", url="https://youtube.com/@NobiDeveloper")
         ])
         btn.insert(0, [
-            InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-            InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data="premium_info")             
+            InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+            InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data="seeplans")             
         ])
     else:
         btn = []
@@ -2128,8 +2128,8 @@ async def auto_filter(client, msg, spoll=False):
             InlineKeyboardButton("⛔️  sᴜʙsᴄʀɪʙᴇ ᴏᴜʀ ʏᴛ ᴄʜᴀɴɴᴇʟ ​ ⛔️", url="https://youtube.com/@NobiDeveloper")
         ])
         btn.insert(0, [
-            InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-            InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data="premium_info")             
+            InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+            InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data="seeplans")             
         ])
     if offset != "":
         req = message.from_user.id if message.from_user else 0
