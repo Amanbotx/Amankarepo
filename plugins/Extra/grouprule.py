@@ -3,7 +3,7 @@ from pyrogram.types import ( InlineKeyboardButton, InlineKeyboardMarkup,ForceRep
 @Client.on_message(filters.private & filters.command(["grouprule"]))
 async def refer(client,message):
     reply_markup = InlineKeyboardMarkup(
-       		[ [ InlineKeyboardButton(" 📲   ᴄʟɪᴄᴋ  ᴍᴇ  ᴛᴏ  ʀᴇꜰᴇʀ   📲 " ,url=f"https://telegram.me/share/url?url=https://telegram.me/Movie_080_bot?start={message.from_user.id}") ]   ])
+       		[ [ InlineKeyboardButton("𝑪𝒍𝒐𝒔𝒆",callback_data = "close_data") ]   ])
     await message.reply_text(f"<code>♨️ 𝗚𝗥𝗢𝗨𝗣 𝗥𝗨𝗟𝗘𝗦 ♨️
 
 🔹 Sᴇᴀʀᴄʜ Mᴏᴠɪᴇ Wɪᴛʜ Cᴏʀʀᴇᴄᴛ Sᴘᴇʟʟɪɴɢ :
