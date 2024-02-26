@@ -6,11 +6,11 @@ from pyrogram import Client , filters
 
 # def plan(update: Update, context: CallbackContext) -> None:
 @Client.on_message(filters.private & filters.command(["grouprule"]))
-async def grouprule(client,message):
+async def grorule(client,message):
     # Replace the following placeholders with your actual values
     button_text = '𝑩𝑼𝒀 𝑷𝑳𝑨𝑵'
     photo_url = 'https://graph.org/file/f8c26a2bda2c9ca9c6871.jpg'
-    grouprule_text = '<code>♨️ 𝗚𝗥𝗢𝗨𝗣 𝗥𝗨𝗟𝗘𝗦 ♨️
+    grorule_text = '<code>♨️ 𝗚𝗥𝗢𝗨𝗣 𝗥𝗨𝗟𝗘𝗦 ♨️
 
 🔹 Sᴇᴀʀᴄʜ Mᴏᴠɪᴇ Wɪᴛʜ Cᴏʀʀᴇᴄᴛ Sᴘᴇʟʟɪɴɢ :
 › ᴀᴠᴀᴛᴀʀ 2009 ✅
@@ -39,4 +39,4 @@ async def grouprule(client,message):
     reply_markup = InlineKeyboardMarkup(keyboard)
 
     # Send a message with the plan details, photo, and the buy plan button
-    await client.send_photo(chat_id=message.chat.id,photo=photo_url, caption=grouprule_text, reply_markup=reply_markup)
+    await client.send_photo(chat_id=message.chat.id,photo=photo_url, caption=grorule_text, reply_markup=reply_markup)
