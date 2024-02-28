@@ -1,4 +1,6 @@
-from from pyrogram.types import (InlineKeyboardButton, InlineKeyboardMarkup,ForceReply)
+# from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+# from telegram.ext import Updater, CommandHandler, CallbackContext
+from pyrogram.types import (InlineKeyboardButton, InlineKeyboardMarkup,ForceReply)
 from pyrogram import Client , filters
 
 
@@ -19,3 +21,4 @@ async def plan(client,message):
 
     # Send a message with the plan details, photo, and the buy plan button
     await client.send_photo(chat_id=message.chat.id,photo=photo_url, caption=plan_text, reply_markup=reply_markup)
+
