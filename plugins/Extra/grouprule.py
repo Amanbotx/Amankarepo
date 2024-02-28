@@ -3,7 +3,7 @@ from pyrogram import Client , filters
 
 
 # def plan(update: Update, context: CallbackContext) -> None:
-@Client.on_message(filters.private & filters.command(["plan"]))
+@Client.on_message(filters.private & filters.command(["grouprule"]))
 async def plan(client,message):
     # Replace the following placeholders with your actual values
     button_text = '𝑩𝑼𝒀 𝑷𝑳𝑨𝑵'
