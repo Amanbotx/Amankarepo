@@ -1593,7 +1593,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
         await asyncio.sleep(30)
-            await k.delete()
+        await k.delete()
             return
 
     elif query.data == "give_trial":
