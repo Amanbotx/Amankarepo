@@ -20,9 +20,9 @@ async def upgrade(bot,update):
 	After Payment Send Screenshots Of 
         Payment To Admin"""
 	keybord = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/webx_admin_bot")], 
-        			[InlineKeyboardButton("PayPal 🌎",url = "https://t.me/webx_admin_bot"),
-        			InlineKeyboardButton("UPI ",url = "https://t.me/webx_admin_bot")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
+        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/Testing_00100_bot")], 
+        			[InlineKeyboardButton("PayPal 🌎",url = "https://t.me/Testing_00100_bot"),
+        			InlineKeyboardButton("UPI ",url = "https://t.me/Testing_00100_bot")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
 	await update.message.edit(text = text,reply_markup = keybord)
 	
 
@@ -47,6 +47,6 @@ async def upgradecm(bot,message):
         Payment To Admin"""
 	keybord = InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/webx_admin_bot")], 
-        			[InlineKeyboardButton("PayPal 🌎",url = "https://t.me/webx_admin_bot"),
-        			InlineKeyboardButton("Paytm",url = "https://t.me/webx_admin_bot")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
+        			[InlineKeyboardButton("PayPal 🌎",url = "https://t.me/Testing_00100_bot"),
+        			InlineKeyboardButton("Paytm",url = "https://t.me/Testing_00100_bot")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
 	await message.reply_text(text = text,reply_markup = keybord)
