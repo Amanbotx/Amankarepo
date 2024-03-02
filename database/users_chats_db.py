@@ -217,6 +217,21 @@ class Database:
         expiry_time = datetime.datetime.now() + datetime.timedelta(seconds=seconds)
         user_data = {"id": user_id, "expiry_time": expiry_time, "has_free_trial": True}
         await self.users.update_one({"id": user_id}, {"$set": user_data}, upsert=True)
+
+
+    async def aman_refer_ki(self, user_id):
+        user_data = await self.get_user(user_id)
+        if user_data:
+            return user_data.get("aman_refer_ka", False)
+        return False
+
+    async def aman_refer(self, user_id):
+        #await set_free_trial_status(user_id)
+        user_id = user_id
+        seconds = 5*60         
+        expiry_time = datetime.datetime.now() + datetime.timedelta(seconds=seconds)
+        user_data = {"id": user_id, "expiry_time": expiry_time, "has_free_trial": True}
+        await self.users.update_one({"id": user_id}, {"$set": user_data}, upsert=True)
         
         
 db = Database(DATABASE_URI, DATABASE_NAME)
