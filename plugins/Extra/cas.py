@@ -5,7 +5,7 @@ import requests
 from pyrogram import filters
 
 from nana import app, Command
-from nana.helpers.string import replace_text
+from nana.helper.string import replace_text
 
 __MODULE__ = "CAS Scanner"
 __HELP__ = """
