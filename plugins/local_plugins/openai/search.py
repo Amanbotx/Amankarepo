@@ -7,7 +7,7 @@ import asyncio
 openai.api_key = OPENAI_API
 
 
-@
+
 @Client.on_message(filters.private & filters.command('openai'))
 async def openai_answer(client, message):
    user_input = message.text.split()[1:]
