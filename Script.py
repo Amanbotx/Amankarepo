@@ -32,6 +32,7 @@ class script(object):
 ├⍟ Usᴇᴅ Sᴛᴏʀᴇɢᴇ : <code>{}</code>
 ├⍟ Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ : <code>{}</code>
 ╰───────────────⍟</b>"""
+    REPRT_MSG = """ Reported To Admin"""
 
     LOG_TEXT_G = """#NewGroup
     
