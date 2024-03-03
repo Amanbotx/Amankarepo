@@ -1,25 +1,36 @@
 
-from pyrogram import Client, filters, enums
-from info import COMMAND_HAND_LER
-from plugins.helper.cust_p_filters import f_onw_fliter
+import asyncio
 
-# LUCK------------ https://telegram.me/NobiDeveloper ------------ #
+import requests
+from pyrogram import filters
 
-# EMOJI CONSTANTS
-TRY_YOUR_LUCK = "🎰"
-# EMOJI CONSTANTS
+from nana import app, Command
+from nana.helpers.string import replace_text
 
-@Client.on_message(
-    filters.command(["luck", "cownd"])
-)
-async def luck_cownd(client, message):
-    """ /luck an @animatedluck """
-    rep_mesg_id = message.id
-    if message.reply_to_message:
-        rep_mesg_id = message.reply_to_message.id
-    await client.send_dice(
-        chat_id=message.chat.id,
-        emoji=TRY_YOUR_LUCK,
-        disable_notification=True,
-        reply_to_message_id=rep_mesg_id
-)
+__MODULE__ = "CAS Scanner"
+__HELP__ = """
+──「 **Combot Anti Spam Check** 」──
+-> `cas` user_id
+
+"""
+
+@app.on_message(filters.me & filters.command(["cas"], Command))
+async def cas(_client, message):
+    cmd = message.command
+
+    user = ""
+    if len(cmd) > 1:
+        user = " ".join(cmd[1:])
+    elif message.reply_to_message and len(cmd) == 1:
+        user = message.reply_to_message.text
+    elif not message.reply_to_message and len(cmd) == 1:
+        await message.edit("`Usage: cas user_id`")
+        await asyncio.sleep(2)
+        await message.delete()
+        return
+    results = requests.get(f'https://api.cas.chat/check?user_id={user}').json()
+    try:
+        reply_text = f'`User ID: `{user}\n`Offenses: `{results["result"]["offenses"]}\n`Messages: `\n{results["result"]["messages"]}\n`Time Added: `{results["result"]["time_added"]}'
+    except:
+        reply_text = "`Record not found.`"
+    await message.edit(replace_text(reply_text))
