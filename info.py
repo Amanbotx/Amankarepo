@@ -131,6 +131,11 @@ REQUESTED_CHANNEL = int(environ.get('REQUESTED_CHANNEL', '-1002062708890'))
 # Command
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
+#ai
+AI = is_enabled((environ.get("AI","True")), True)
+OPENAI_API = environ.get("OPENAI_API","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")
+AI_LOGS = int(environ.get("AI_LOGS","-1002062708890"))
+
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
 LOG_STR += ("P_TTI_SHOW_OFF found , Users will be redirected to send /start to Bot PM instead of sending file file directly\n" if P_TTI_SHOW_OFF else "P_TTI_SHOW_OFF is disabled files will be send in PM, instead of sending start.\n")
