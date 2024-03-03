@@ -15,7 +15,6 @@ import aiofiles
 import speedtest
 from PIL import Image
 from pyrogram.types import Message
-from info import S_GROUP
 
 aiohttpsession = ClientSession()
 
@@ -44,7 +43,7 @@ async def carbon_func(_, message):
     await message.reply_photo(
         photo=carbon,
         caption="**ᴛʜɪs ᴘɪᴄ ɪs ɴɪᴄᴇ ᴏɴᴇ\nᴍᴀᴅᴇ ʙʏ ᴄɪɴᴇᴍᴀʟᴀ.ᴄᴏᴍ**",
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url=S_GROUP)]]),                   
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url='https://t.me/RUhviiX1txdiOWFl')]]),                   
     )
     await m.delete()
     carbon.close()
