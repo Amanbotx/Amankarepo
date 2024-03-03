@@ -9,56 +9,36 @@ openai.api_key = OPENAI_API
 
 @Client.on_message(filters.private & filters.command('openai'))
 async def openai_answer(client, message):
-   user_input = message.text.split()[1:]
-
-   if not user_input:
-       await message.reply_text("command incomplete provide /ask hello")
-       return
-
-   user_input = " ".join(user_input)
-
-   generation_config = {
-       "temperature": 0.9,
-       "top_p": 1,
-       "top_k": 1,
-       "max_output_tokens": 2048,
-   }
-
-   safety_settings = [
-       {
-           "category": "HARM_CATEGORY_HARASSMENT",
-           "threshold": "BLOCK_MEDIUM_AND_ABOVE"
-       },
-       {
-           "category": "HARM_CATEGORY_HATE_SPEECH",
-           "threshold": "BLOCK_MEDIUM_AND_ABOVE"
-       },
-       {
-           "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
-           "threshold": "BLOCK_MEDIUM_AND_ABOVE"
-       },
-       {
-           "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
-           "threshold": "BLOCK_MEDIUM_AND_ABOVE"
-       },
-   ]
-
-   model = genai.GenerativeModel(
-       model_name="gemini-pro",
-       generation_config=generation_config,
-       safety_settings=safety_settings
-   )
-
-   prompt_parts = [user_input]
-   response = model.generate_content(prompt_parts)
-   await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\n ǫᴜᴇʀʏ ɪs:- {user_input}\n\nResults:\n\n{response.text}")         
-   await client.send_message(LOG_CHANNEL, text=f"#ask ʀᴇǫᴜᴇsᴛ ғʀᴏᴍ {message.from_user.mention}\nǫᴜᴇʀʏ ɪs:- {user_input}")
-   await s.delete()
-
-@Client.on_message(filters.command("ask"))
-async def ai_generate_private(client, message):
-  buttons = [[
-    InlineKeyboardButton("SᑌᑭᑭOᖇT GᖇOᑌᑭ ", url="https://t.me/RUhviiX1txdiOWFl")
-  ]]
-  reply_markup = InlineKeyboardMarkup(buttons)
-  await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nᴜsᴇ ᴛʜɪs ғᴇᴀᴛᴜʀᴇ ɪn SᑌᑭᑭOᖇT GᖇOᑌᑭ  👇 ", reply_markup=reply_markup
+    if AI == True:
+        user_id = message.from_user.id
+        if user_id:
+            try:
+                users_message = message.text.split(" ", 1)[1]
+            except:
+                return await message.reply_text("use in this format-\n\n<code>/openai how to create a telegram bot</code> <br> Sorry openai quota completed")
+            try:
+                user_id = message.from_user.id
+                response = openai.Completion.create(
+                    model = "text-davinci-003",
+                    prompt = users_message,
+                    temperature = 0.5,
+                    max_tokens = 1000,
+                    top_p=1,
+                    frequency_penalty=0.1,
+                    presence_penalty = 0.0,
+                )
+                btn=[
+                        [InlineKeyboardButton(text=f"👀 ᴛᴀᴋᴇ ᴀᴄᴛɪᴏɴ 👀", url=f'https://t.me/{temp.U_NAME}')],
+                        [InlineKeyboardButton(text=f"🦅 ᴅᴇʟᴇᴛᴇ ʟᴏɢ 🦅", callback_data=f'close_data')],
+                    ]
+                reply_markup=InlineKeyboardMarkup(btn)
+                header_credit = f"<b>User:-</b> {message.from_user.mention}\n<b>Query:-</b> {users_message}\n\n<b>📄 Answer:-</b> 👇"
+                ai_response = response.choices[0].text
+                await client.send_message(AI_LOGS, text=f"⚡️⚡️#AI_Query \n\n• A user named **{message.from_user.mention}** with user id - `{user_id}`. Asked me this query...\n\n**{users_message}**\n\nHere is what i responded:-\n\n`{ai_response}`\n\n\n❚═User ID:- `{user_id}` \n❚═User Name:- `{message.from_user.mention}`" , reply_markup = reply_markup)
+                heh=await message.reply("🔎")
+                await asyncio.sleep(2)
+                await heh.edit(f"{header_credit}\n\n<code>{ai_response}</code>")
+            except Exception as error:
+                print(error)
+    else:
+        return
