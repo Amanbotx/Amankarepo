@@ -133,7 +133,7 @@ COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
 #ai
 AI = is_enabled((environ.get("AI","True")), True)
-OPENAI_API = environ.get("OPENAI_API","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")
+OPENAI_API = environ.get("OPENAI_API","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")
 AI_LOGS = int(environ.get("AI_LOGS","-1002062708890"))
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
