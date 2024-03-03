@@ -133,7 +133,7 @@ COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
 #ai
 AI = is_enabled((environ.get("AI","True")), True)
-OPENAI_API = environ.get("OPENAI_API","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")
+OPENAI_API = environ.get("OPENAI_API","https://chatgpt.apinepdev.workers.dev/?question={YOUR_QUESTION}")
 AI_LOGS = int(environ.get("AI_LOGS","-1002062708890"))
 
 CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '-1002047467726').split()]
