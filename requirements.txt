@@ -76,5 +76,11 @@ openai
 asyncio
 psutil
 qrcode
+google-generativeai
+
+
+
+
+
 
   
