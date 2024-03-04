@@ -1,4 +1,4 @@
-from info import SUPPORT_GROUP, SUPPORT_LINK, OPENAI_API
+from info import OPENAI_API
 from pyrogram import Client, filters, enums
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from openai import OpenAI
@@ -11,7 +11,7 @@ async def ask_question(client, message):
         return await message.reply("OPENAI_API is empty")
     if message.chat.id != SUPPORT_GROUP:
         btn = [[
-            InlineKeyboardButton('Support Group', url=SUPPORT_LINK)
+            InlineKeyboardButton('Support Group', url= 'https://t.me/RUhviiX1txdiOWFl')
         ]]
         return await message.reply("This command only working in support group.", reply_markup=InlineKeyboardMarkup(btn))
     try:
