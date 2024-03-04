@@ -75,6 +75,6 @@ dnspython==2.3.0
 openai
 asyncio
 psutil
-
+qrcode
 
   
