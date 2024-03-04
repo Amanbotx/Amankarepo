@@ -136,7 +136,7 @@ AI = is_enabled((environ.get("AI","True")), True)
 OPENAI_API = environ.get("OPENAI_API","https://chatgpt.apinepdev.workers.dev/?question={YOUR_QUESTION}")
 AI_LOGS = int(environ.get("AI_LOGS","-1002062708890"))
 
-GOOGLE_API_KEY = 'os'.'environ'.'get'('API_KEY', 'AIzaSyASKXFxSjnvHO_k5kibkqf8DOdLjh9G4Hs')
+GOOGLE_API_KEY = environ.get('API_KEY', 'AIzaSyASKXFxSjnvHO_k5kibkqf8DOdLjh9G4Hs')
 
 CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '-1002047467726').split()]
 TEXT = environ.get("APPROVED_WELCOME_TEXT", "Hello {mention}\nWelcome To {title}\n\nYour request has been approved")
