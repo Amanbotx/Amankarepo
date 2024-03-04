@@ -131,10 +131,18 @@ REQUESTED_CHANNEL = int(environ.get('REQUESTED_CHANNEL', '-1002062708890'))
 # Command
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
-#ai
-AI = is_enabled((environ.get("AI","True")), True)
-OPENAI_API = environ.get("OPENAI_API","https://chatgpt.apinepdev.workers.dev/?question={YOUR_QUESTION}")
-AI_LOGS = int(environ.get("AI_LOGS","-1002062708890"))
+# support group
+SUPPORT_GROUP = environ.get('SUPPORT_GROUP', '-1002047467726')
+if len(SUPPORT_GROUP) == 0:
+    print('Error - SUPPORT_GROUP is missing, exiting now')
+    exit()
+else:
+    SUPPORT_GROUP = int(SUPPORT_GROUP)
+
+# for chatGPT
+OPENAI_API = environ.get('OPENAI_API', '')
+if len(OPENAI_API) == 0:
+    print('Info - OPENAI_API is empty')
 
 GOOGLE_API_KEY = environ.get('API_KEY', 'AIzaSyASKXFxSjnvHO_k5kibkqf8DOdLjh9G4Hs')
 
