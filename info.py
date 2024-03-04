@@ -131,19 +131,10 @@ REQUESTED_CHANNEL = int(environ.get('REQUESTED_CHANNEL', '-1002062708890'))
 # Command
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
-# support group
-SUPPORT_GROUP = environ.get('SUPPORT_GROUP', '-1002047467726')
-if len(SUPPORT_GROUP) == 0:
-    print('Error - SUPPORT_GROUP is missing, exiting now')
-    exit()
-else:
-    SUPPORT_GROUP = int(SUPPORT_GROUP)
-
 # for chatGPT
 OPENAI_API = environ.get('OPENAI_API', '')
-if len(OPENAI_API) == 0:
-    print('Info - OPENAI_API is empty')
 
+#ask 
 GOOGLE_API_KEY = environ.get('API_KEY', 'AIzaSyASKXFxSjnvHO_k5kibkqf8DOdLjh9G4Hs')
 
 CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '-1002047467726').split()]
