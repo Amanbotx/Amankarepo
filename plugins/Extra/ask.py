@@ -67,7 +67,7 @@ async def ai_generate(client, message):
 @Client.on_message(filters.command("ai") & filters.private)
 async def ai_generate_private(client, message):
   buttons = [[
-    InlineKeyboardButton("ɢʀᴏᴜᴘ", url="https://t.me/sdbots_support")
+    InlineKeyboardButton("ɢʀᴏᴜᴘ", url="https://t.me/RUhviiX1txdiOWFl")
   ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await message.reply_sticker("CAACAgUAAxkBAAIjWGWkDiJW1Dyn6n8CjbbwxExf0FEIAAJyCgACywLBVKKgVw2dk9PbHgQ")
