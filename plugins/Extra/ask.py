@@ -3,12 +3,13 @@ import requests
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 import requests
-from info import LOG_CHANNEL, GOOGLE_API_KEY
+from info import LOG_CHANNEL, GOOGLE_API_KEY, SUPPORT_CHAT_ID
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 import google.generativeai as genai
 
 genai.configure(api_key=GOOGLE_API_KEY)
 
-@Client.on_message(filters.command('ask'))# support work only added 
+@Client.on_message(filters.command('ask') & filters.chat(SUPPORT_CHAT_ID)) # support work only added 
 async def ai_generate(client, message):
    user_input = message.text.split()[1:]
 
@@ -55,11 +56,11 @@ async def ai_generate(client, message):
    await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\n ǫᴜᴇʀʏ ɪs:- {user_input}\n\nResults:\n\n{response.text}")         
    await client.send_message(LOG_CHANNEL, text=f"#ask ʀᴇǫᴜᴇsᴛ ғʀᴏᴍ {message.from_user.mention}\nǫᴜᴇʀʏ ɪs:- {user_input}")
    await s.delete()
-@Client.on_message(filters.command("ask") & filters.private)
+
+@Client.on_message(filters.command("ask"))
 async def ai_generate_private(client, message):
   buttons = [[
-    InlineKeyboardButton("ɢʀᴏᴜᴘ", url="https://t.me/RUhviiX1txdiOWFl")
+    InlineKeyboardButton("SᑌᑭᑭOᖇT GᖇOᑌᑭ ", url="https://t.me/RUhviiX1txdiOWFl")
   ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await message.reply_sticker("CAACAgUAAxkBAAIjWGWkDiJW1Dyn6n8CjbbwxExf0FEIAAJyCgACywLBVKKgVw2dk9PbHgQ")
-  await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nᴜsᴇ ᴛʜɪs ғᴇᴀᴛᴜʀᴇ ɪɴ ɢʀᴏᴜᴘ", reply_markup=reply_markup)
+  await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nᴜsᴇ ᴛʜɪs ғᴇᴀᴛᴜʀᴇ ɪn SᑌᑭᑭOᖇT GᖇOᑌᑭ  👇 ", reply_markup=reply_markup)
