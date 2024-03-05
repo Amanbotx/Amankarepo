@@ -1,35 +1,44 @@
-from info import OPENAI_API
-from pyrogram import Client, filters, enums
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+
+import os
+from telegram import Update
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
+
+# Import the OpenAI library
 import openai
 
+# Set up your OpenAI API key
+openai.api_key = 'YOUR_OPENAI_API_KEY'
 
+# Define the function to handle the /openai command
+def openai_command(update: Update, context: CallbackContext):
+    # Check if the message is from a group chat
+    if update.message.chat.type != 'group':
+        update.message.reply_text("This command only works in group chats.")
+        return
 
-@Client.on_message(filters.command("openai"))
-async def ask_question(client, message):
-    if len(OPENAI_API) == 0:
-        return await message.reply("OPENAI_API is empty")
-    if message.chat.id != SUPPORT_GROUP:
-        btn = [[
-            InlineKeyboardButton('Support Group', url= 'https://t.me/RUhviiX1txdiOWFl')
-        ]]
-        return await message.reply("This command only working in support group.", reply_markup=InlineKeyboardMarkup(btn))
-    try:
-        text = message.text.split(" ", 1)[1]
-    except:
-        return await message.reply_text("Command Incomplete!\nUsage: /openai your_question")
-    msg = await message.reply("Searching...")
-    try:
-        response = ai_client.chat.completions.create(
-            messages=[
-                {"role": "user", "content": text}
-            ],
-            model="gpt-3.5-turbo"
-        )
-        await msg.edit(f"User: {message.from_user.mention}\nQuery: <code>{text}</code>\n\nResults:\n\n<code>{response.choices[0].message.content}</code>")
-    except Exception as e:
-        await msg.edit(f'Error - <code>{e}</code>')
+    # Get the user input
+    user_input = ' '.join(context.args)
+    
+    # Call the OpenAI API to get a response
+    response = openai.Completion.create(
+        engine="text-davinci-002",
+        prompt=user_input,
+        max_tokens=100
+    )
+    
+    # Send the response back to the group chat
+    update.message.reply_text(response.choices[0].text)
 
+# Set up the Telegram bot
+updater = Updater('YOUR_TELEGRAM_BOT_TOKEN', use_context=True)
+dispatcher = updater.dispatcher
+
+# Add the /openai command handler
+dispatcher.add_handler(CommandHandler('openai', openai_command))
+
+# Start the bot
+updater.start_polling()
+updater.idle()
 
 
 
