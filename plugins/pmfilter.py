@@ -1949,7 +1949,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto("https://te.legra.ph/file/194f36edd9993d4ad5cb5.jpg")
             ) 
             await query.message.edit_text(
-            text=script.KUSHAL_TXT,
+            text=script.AUTO_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
             )
