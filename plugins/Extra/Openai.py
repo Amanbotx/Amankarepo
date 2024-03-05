@@ -1,78 +1,34 @@
-import os
-from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
-import requests
-from info import LOG_CHANNEL, GOOGLE_API_KEY
-import google.generativeai as genai
+from info import OPENAI_API
+from pyrogram import Client, filters, enums
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from openai import OpenAI
 
-genai.configure(api_key=GOOGLE_API_KEY)
-# how to get the api key == https://t.me/sd_bots/256 (copy this link and search on telegram)
+ai_client = OpenAI(api_key=OPENAI_API)
 
-@Client.on_message(filters.command("openai") & filters.group)
-async def openai_generate(client, message):
-    user_input = message.text.split()[1:]
-
-    if not user_input:
-        await message.reply_text("Please provide your question after /ai")
-        return
-
-    user_input = " ".join(user_input)
-    s = await message.reply_sticker("CAACAgUAAxkBAAIj-mWlAjaflbkifrOJPnnxp2edkuD-AALPDAACzIApVcg9eEkNQbBGHgQ")
-  
-    if user_input.lower() in ["who is your owner", "what is your owner name"]:  
-        buttons = [[
-            InlineKeyboardButton("developer", url="https://t.me/RUhviiX1txdiOWFl")
+@Client.on_message(filters.command("openai"))
+async def ask_question(client, message):
+    if len(OPENAI_API) == 0:
+        return await message.reply("OPENAI_API is empty")
+    if message.chat.id != SUPPORT_GROUP:
+        btn = [[
+            InlineKeyboardButton('Support Group', url= 'https://t.me/RUhviiX1txdiOWFl')
         ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_sticker("CAACAgUAAxkBAAIjWGWkDiJW1Dyn6n8CjbbwxExf0FEIAAJyCgACywLBVKKgVw2dk9PbHgQ")
-        await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}", reply_markup=reply_markup)
-        return
-      
-    generation_config = {
-        "temperature": 0.9,
-        "top_p": 1,
-        "top_k": 1,
-        "max_output_tokens": 2048,
-    }
-
-    safety_settings = [
-        {
-            "category": "HARM_CATEGORY_HARASSMENT",
-            "threshold": "BLOCK_MEDIUM_AND_ABOVE"
-        },
-        {
-            "category": "HARM_CATEGORY_HATE_SPEECH",
-            "threshold": "BLOCK_MEDIUM_AND_ABOVE"
-        },
-        {
-            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
-            "threshold": "BLOCK_MEDIUM_AND_ABOVE"
-        },
-        {
-            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
-            "threshold": "BLOCK_MEDIUM_AND_ABOVE"
-        },
-    ]
-
-    model = genai.GenerativeModel(
-        model_name="gemini-pro",
-        generation_config=generation_config,
-        safety_settings=safety_settings
-    )
-
-    prompt_parts = [user_input]
-    response = model.generate_content(prompt_parts)
-    await message.reply_text(response.text)
-    await client.send_message(LOG_CHANNEL, text=f"#google_ai ʀᴇǫᴜᴇsᴛ ғʀᴏᴍ {message.from_user.mention}\nǫᴜᴇʀʏ ɪs:- {user_input}")
-    await s.delete()
-@Client.on_message(filters.command("openai") & filters.private)
-async def openai_generate_private(client, message):
-  buttons = [[
-    InlineKeyboardButton("ɢʀᴏᴜᴘ", url="https://t.me/RUhviiX1txdiOWFl")
-  ]]
-  reply_markup = InlineKeyboardMarkup(buttons)
-  await message.reply_sticker("CAACAgUAAxkBAAIjWGWkDiJW1Dyn6n8CjbbwxExf0FEIAAJyCgACywLBVKKgVw2dk9PbHgQ")
-  await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nᴜsᴇ ᴛʜɪs ғᴇᴀᴛᴜʀᴇ ɪɴ ɢʀᴏᴜᴘ", reply_markup=reply_markup)
+        return await message.reply("This command only working in support group.", reply_markup=InlineKeyboardMarkup(btn))
+    try:
+        text = message.text.split(" ", 1)[1]
+    except:
+        return await message.reply_text("Command Incomplete!\nUsage: /openai your_question")
+    msg = await message.reply("Searching...")
+    try:
+        response = ai_client.chat.completions.create(
+            messages=[
+                {"role": "user", "content": text}
+            ],
+            model="gpt-3.5-turbo"
+        )
+        await msg.edit(f"User: {message.from_user.mention}\nQuery: <code>{text}</code>\n\nResults:\n\n<code>{response.choices[0].message.content}</code>")
+    except Exception as e:
+        await msg.edit(f'Error - <code>{e}</code>')
 
 
 
