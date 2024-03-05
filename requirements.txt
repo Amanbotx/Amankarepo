@@ -77,7 +77,7 @@ asyncio
 psutil
 qrcode
 google-generativeai
-
+python-telegram-bot
 
 
 
