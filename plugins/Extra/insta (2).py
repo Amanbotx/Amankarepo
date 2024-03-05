@@ -102,7 +102,7 @@ async def link_handler(Mbot, message):
         except Exception as e:
           #  await message.reply_text(f"https://ddinstagram.com{content_value}")
             if LOG_CHANNEL:
-               await Mbot.send_message(LOG_CHANNEL,f"Instagram {e} {link}")
+               await Mbot.send_message(LOG_CHANNEL,text=f"#ɪᴍᴀɢᴇ_sᴇᴀʀᴄʜ\nʜᴇʏ {message.from_user.mention}\nʀᴇǫᴜᴇsᴛ ɪs {user_query}")
                await Mbot.send_message(LOG_CHANNEL, traceback.format_exc())
           #     await message.reply(tracemsg)
             ##optinal 
