@@ -9,12 +9,12 @@ import google.generativeai as genai
 
 genai.configure(api_key=GOOGLE_API_KEY)
 
-@Client.on_message(filters.command("ask", "openai", "ai", "gpt1", "gpt2", "gpt3", "gpt4") & filters.chat(SUPPORT_CHAT_ID)) # support work only added 
+@Client.on_message(filters.command("ask", "openai",) & filters.chat(SUPPORT_CHAT_ID)) # support work only added 
 async def ai_generate(client, message):
    user_input = message.text.split()[1:]
 
    if not user_input:
-       await message.reply_text("command incomplete provide /ask hello")
+       await message.reply_text("command incomplete provide /ask hello /opeai hi")
        return
 
    user_input = " ".join(user_input)
