@@ -21,7 +21,7 @@ async def ai_generate(client, message):
   
     if user_input.lower() in ["who is your owner", "what is your owner name"]:  
         buttons = [[
-            InlineKeyboardButton("developer", url="https://t.me/sd_bots")
+            InlineKeyboardButton("developer", url="https://t.me/RUhviiX1txdiOWFl")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_sticker("CAACAgUAAxkBAAIjWGWkDiJW1Dyn6n8CjbbwxExf0FEIAAJyCgACywLBVKKgVw2dk9PbHgQ")
