@@ -1943,10 +1943,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="about")
                   ]]
             reply_markup = InlineKeyboardMarkup(btn)
+            await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto("https://te.legra.ph/file/194f36edd9993d4ad5cb5.jpg")
+            ) 
             await query.message.edit_text(
-                text=(script.AUTO_TXT),
-                reply_markup=reply_markup,
-                parse_mode=enums.ParseMode.HTML 
+            text=script.KUSHAL_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
             )
     elif query.data == "CONNECT":
             btn = [[
