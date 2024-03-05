@@ -72,7 +72,7 @@ async def openai_generate_private(client, message):
   ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await message.reply_sticker("CAACAgUAAxkBAAIjWGWkDiJW1Dyn6n8CjbbwxExf0FEIAAJyCgACywLBVKKgVw2dk9PbHgQ")
-  await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nᴜsᴇ ᴛʜɪs ғᴇᴀᴛᴜʀᴇ ɪɴ ɢʀᴏᴜᴘ", reply_markup=reply_markup
+  await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nᴜsᴇ ᴛʜɪs ғᴇᴀᴛᴜʀᴇ ɪɴ ɢʀᴏᴜᴘ", reply_markup=reply_markup)
 
 
 
