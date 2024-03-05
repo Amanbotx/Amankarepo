@@ -63,4 +63,4 @@ async def ai_generate_private(client, message):
     InlineKeyboardButton("SᑌᑭᑭOᖇT GᖇOᑌᑭ ", url="https://t.me/RUhviiX1txdiOWFl")
   ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nᴜsᴇ ᴛʜɪs ғᴇᴀᴛᴜʀᴇ ɪn SᑌᑭᑭOᖇT GᖇOᑌᑭ  👇 ", reply_markup=reply_markup
+  await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nᴜsᴇ ᴛʜɪs ғᴇᴀᴛᴜʀᴇ ɪn SᑌᑭᑭOᖇT GᖇOᑌᑭ  👇 ", reply_markup=reply_markup)
