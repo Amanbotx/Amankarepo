@@ -1,33 +1,30 @@
-from info import OPENAI_API
-from pyrogram import Client, filters, enums
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram import Client, filters
+from pyrogram.types import Message
 import openai
+from info import API_ID, API_HASH, BOT_TOKEN, OPENAI_API_KEY
 
-openai.api_key = OPENAI_API
+openai.api_key = OPENAI_API_KEY
 
-@Client.on_message(filters.command("openai"))
-async def openai(client, message):
-    if message.chat.id != S_GROUP:
-        btn = [[
-            InlineKeyboardButton('Support Group', url="https://t.me/RUhviiX1txdiOWFl")
-        ]]
-        return await message.reply("This command only working in support group.", reply_markup=InlineKeyboardMarkup(btn))
+@Client.on_message(filters.command('openai'))
+async def openai_command(client, message):
+    if not message.text:
+        await client.send_message(message.chat.id, "Please provide ur request")
+        return
+
     try:
-        text = message.text.split(" ", 1)[1]
-    except:
-        return await message.reply_text("Command Incomplete!\nUsage: /openai your_question")
-    msg = await message.reply("Searching...")
-    try:
+        user_input = message.text.split(' ', 1)[1]
+
         response = openai.Completion.create(
-            engine="text-davinci-003",
-            prompt=text,
-            max_tokens=2000
+            model="gpt-3.5-turbo-instruct",
+            prompt=user_input,
+            max_tokens=1024
         )
-        await msg.edit(f"User: {message.from_user.mention}\nQuery: <code>{text}</code>\n\nResults:\n\n<code>{response.choices[0].text}</code>")
+
+        await message.reply_text(response.choices[0].text)
+
     except Exception as e:
-        await msg.edit(f'Error - <code>{e}</code>')
-
-
+        error_message = f"Sorry, an error occurred: {str(e)}"
+        await message.reply_text(error_message)
 
 
 
