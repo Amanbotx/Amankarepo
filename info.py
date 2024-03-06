@@ -137,6 +137,10 @@ OPENAI_API_KEY = environ.get('OPENAI_API_KEY', "sk-fzy0gyoSn9VcPNutR7WeT3BlbkFJ4
 #ask 
 GOOGLE_API_KEY = environ.get('API_KEY', 'AIzaSyASKXFxSjnvHO_k5kibkqf8DOdLjh9G4Hs')
 
+AI = is_enabled((environ.get("AI","True")), True)
+OPENAI_API = environ.get("OPENAI_API","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")
+AI_LOGS = int(environ.get("AI_LOGS","-1002062708890"))
+
 CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '-1002047467726').split()]
 TEXT = environ.get("APPROVED_WELCOME_TEXT", "Hello {mention}\nWelcome To {title}\n\nYour request has been approved")
 APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
