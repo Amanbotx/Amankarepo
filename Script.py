@@ -470,218 +470,185 @@ special Thanks To ❤️ Developer -
 • /search  - ɢᴇᴛ ᴛʜᴇ ꜰɪʟᴍ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ꜰʀᴏᴍ ᴠᴀʀɪᴏᴜꜱ ꜱᴏᴜʀᴄᴇꜱ."""
 
      #Aman Developer:
-    FILTER_TXT = """ꜰɪʟᴛᴇʀꜱ
+     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
-ꜰɪʟᴛᴇʀ ɪꜱ ᴀ ꜰᴇᴀᴛᴜʀᴇ ᴡᴇʀᴇ ᴜꜱᴇʀꜱ ᴄᴀɴ ꜱᴇᴛ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ʀᴇᴘʟɪᴇꜱ ꜰᴏʀ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴋᴇʏᴡᴏʀᴅ ᴀɴᴅ ɪ ᴡɪʟʟ ʀᴇꜱᴘᴏɴᴅ ᴡʜᴇɴᴇᴠᴇʀ ᴀ ᴋᴇʏᴡᴏʀᴅ ɪꜱ ꜰᴏᴜɴᴅ ɪɴ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ.
+<b>- 𝙵𝙸𝙻𝚃𝙴𝚁 𝙸𝚂 𝚃𝙷𝙴 𝙵𝙴𝙰𝚃𝚄𝚁𝙴 𝚆𝙴𝚁𝙴 𝚄𝚂𝙴𝚁𝚂 𝙲𝙰𝙽 𝚂𝙴𝚃 𝙰𝚄𝚃𝙾𝙼𝙰𝚃𝙴𝙳 𝚁𝙴𝙿𝙻𝙸𝙴𝚂 𝙵𝙾𝚁 𝙰 𝙿𝙰𝚁𝚃𝙸𝙲𝚄𝙻𝙰𝚁 𝙺𝙴𝚈𝚆𝙾𝚁𝙳 𝙰𝙽𝙳 𝙴𝙻𝚂𝙰 𝚆𝙸𝙻𝙻 𝚁𝙴𝚂𝙿𝙾𝙽𝙳 𝚆𝙷𝙴𝙽𝙴𝚅𝙴𝚁 𝙰 𝙺𝙴𝚈𝚆𝙾𝚁𝙳 𝙸𝚂 𝙵𝙾𝚄𝙽𝙳 𝚃𝙷𝙴 𝙼𝙴𝚂𝚂𝙰𝙶𝙴</b>
 
-ɴᴏᴛᴇ -
+<b>NOTE:</b>
+<b>𝟷. 𝙴𝙻𝚂𝙰 𝚂𝙷𝙾𝚄𝙻𝙳 𝙷𝙰𝚅𝙴 𝙰𝙳𝙼𝙸𝙽 𝙿𝚁𝙸𝚅𝙸𝙻𝙻𝙰𝙶𝙴.
+𝟸. 𝙾𝙽𝙻𝚈 𝙰𝙳𝙼𝙸𝙽𝚂 𝙲𝙰𝙽 𝙰𝙳𝙳 𝙵𝙸𝙻𝚃𝙴𝚁𝚂 𝙸𝙽 𝙰 𝙲𝙷𝙰𝚃.
+𝟹. 𝙰𝙻𝙴𝚁𝚃 𝙱𝚄𝚃𝚃𝙾𝙽𝚂 𝙷𝙰𝚅𝙴 𝙰 𝙻𝙸𝙼𝙸𝚃 𝙾𝙵 𝟼𝟺 𝙲𝙷𝙰𝚁𝙰𝙲𝚃𝙴𝚁𝚂.</b>
 
-1. ᴛʜɪꜱ ʙᴏᴛ ꜱʜᴏᴜʟᴅ ʜᴀᴠᴇ ᴀᴅᴍɪɴ ᴘʀɪᴠɪʟᴇɢᴇ.
-2. ᴏɴʟʏ ᴀᴅᴍɪɴꜱ ᴄᴀɴ ᴀᴅᴅ ꜰɪʟᴛᴇʀꜱ ɪɴ ᴀ ᴄʜᴀᴛ.
-3. ᴀʟᴇʀᴛ ʙᴜᴛᴛᴏɴs ʜᴀᴠᴇ ᴀ ʟɪᴍɪᴛ ᴏꜰ 64 ᴄʜᴀʀᴀᴄᴛᴇʀs.
+<b>Commands and Usage:</b>
+• /filter - <code>add a filter in chat</code>
+• /filters - <code>list all the filters of a chat</code>
+• /del - <code>delete a specific filter in chat</code>
+• /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
 
-ᴄᴏᴍᴍᴀɴᴅs  ᴀɴᴅ  ᴜsᴀɢᴇ -
-• /filter  -  ᴀᴅᴅ ᴀ ꜰɪʟᴛᴇʀ ɪɴ ᴀ ᴄʜᴀᴛ
-• /filters  -  ʟɪꜱᴛ ᴀʟʟ ᴛʜᴇ ꜰɪʟᴛᴇʀꜱ ᴏꜰ ᴀ ᴄʜᴀᴛ
-• /del  -  ᴅᴇʟᴇᴛᴇ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ꜰɪʟᴛᴇʀ ɪɴ ᴀ ᴄʜᴀᴛ
-• /delall  -  ᴅᴇʟᴇᴛᴇ ᴛʜᴇ ᴡʜᴏʟᴇ ꜰɪʟᴛᴇʀꜱ ɪɴ ᴀ ᴄʜᴀᴛ (ᴄʜᴀᴛ ᴏᴡɴᴇʀ ᴏɴʟʏ)"""
+    BUTTON_TXT = """Help: <b>Buttons</b>
 
-    EXTRA_TXT = """ᴀᴜᴛᴏ  ꜰɪʟᴛᴇʀ
+<b>𝙴𝙻𝚂𝙰 𝚂𝚄𝙿𝙿𝙾𝚁𝚃𝚂 𝙱𝙾𝚃𝙷 𝚄𝚁𝙻 𝙰𝙽𝙳 𝙰𝙻𝙴𝚁𝚃 𝙸𝙽𝙻𝙸𝙽𝙴 𝙱𝚄𝚃𝚃𝙾𝙽𝚂.</b>
+<b>NOTE:</b>
+<b>𝟷. 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼 𝚆𝙸𝙻𝙻 𝙽𝙾𝚃 𝙰𝙻𝙻𝙾𝚆𝚂 𝚈𝙾𝚄 𝚃𝙾 𝚂𝙴𝙽𝙳 𝙱𝚄𝚃𝚃𝙾𝙽𝚂 𝚆𝙸𝚃𝙷𝙾𝚄𝚃 𝙰𝙽𝚈 𝙲𝙾𝙽𝚃𝙴𝙽𝚃, 𝚂𝙾 𝙲𝙾𝙽𝚃𝙴𝙽𝚃 𝙸𝚂 𝙼𝙰𝙽𝙳𝙰𝚃𝙾𝚁𝚈.
+𝟸. 𝙴𝙻𝚂𝙰 𝚂𝚄𝙿𝙿𝙾𝚁𝚃𝚂 𝙱𝚄𝚃𝚃𝙾𝙽𝚂 𝚆𝙸𝚃𝙷 𝙰𝙽𝚈 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼 𝙼𝙴𝙳𝙸𝙰 𝚃𝚈𝙿𝙴.
+𝟹. 𝙱𝚄𝚃𝚃𝙾𝙽𝚂 𝚂𝙷𝙾𝚄𝙻𝙳 𝙱𝙴 𝙿𝚁𝙾𝙿𝙴𝚁𝙻𝚈 𝙿𝙰𝚁𝚂𝙴𝙳 𝙰𝚂 𝙼𝙰𝚁𝙺𝙳𝙾𝚆𝙽 𝙵𝙾𝚁𝙼𝙰𝚃</b>
+<b>URL buttons:</b>
+<code>[Button Text](buttonurl:https://t.me/Example...)</code>
 
-ɴᴏᴛᴇ :
-1. ᴍᴀᴋᴇ ᴍᴇ ᴛʜᴇ ᴀᴅᴍɪɴ ᴏꜰ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ɪꜰ ɪᴛ'ꜱ ᴘʀɪᴠᴀᴛᴇ.
-2. ᴍᴀᴋᴇ ꜱᴜʀᴇ ᴛʜᴀᴛ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ᴅᴏᴇꜱ ɴᴏᴛ ᴄᴏɴᴛᴀɪɴꜱ ᴄᴀᴍʀɪᴘꜱ, ᴘᴏʀɴ ᴀɴᴅ ꜰᴀᴋᴇ ꜰɪʟᴇꜱ.
-3. ꜰᴏʀᴡᴀʀᴅ ᴛʜᴇ ʟᴀꜱᴛ ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ ᴍᴇ ᴡɪᴛʜ ǫᴜᴏᴛᴇꜱ. ᴛʜᴇɴ ɪ ᴡɪʟʟ ᴀᴅᴅ ᴀʟʟ ᴛʜᴇ ꜰɪʟᴇꜱ ɪɴᴛᴏ ᴍʏ ᴅʙ.
+<b>Alert buttons:</b>
+<code>[Button Text](buttonalert:This is an alert message)</code>"""
 
-ᴀᴅᴠᴀɴᴄᴇ
-1. ᴀᴅᴅ ᴛʜᴇ ʙᴏᴛ ᴀs ᴀᴅᴍɪɴ ᴏɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
-2. ᴜsᴇ /connect ᴀɴᴅ ᴄᴏɴɴᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛᴏ ᴛʜᴇ ʙᴏᴛ.
-3. ᴜsᴇ /settings ᴏɴ ʙᴏᴛ ᴘᴍ ᴀɴᴅ ᴛᴜʀɴ ᴏɴ ᴏʀ ᴏꜰꜰ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ᴀɴᴅ ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ ᴏɴ ᴛʜᴇ sᴇᴛᴛɪɴɢ ᴍᴇɴᴜ.
-4. ᴜsᴇ /set_template ᴛᴏ sᴇᴛ ʏᴏᴜʀ ᴄᴜsᴛᴏᴍ ɪᴍᴅʙ ᴛᴇᴍᴘʟᴀᴛᴇ"""
+    AUTOFILTER_TXT = """Help: <b>Auto Filter</b>
 
-    CONNECT_TXT = """ᴄᴏɴɴᴇᴄᴛɪᴏɴꜱ
+<b>NOTE:</b>
+<b>𝟷. 𝙼𝙰𝙺𝙴 𝙼𝙴 𝚃𝙷𝙴 𝙰𝙳𝙼𝙸𝙽 𝙾𝙵 𝚈𝙾𝚄𝚁 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝙸𝙵 𝙸𝚃'𝚂 𝙿𝚁𝙸𝚅𝙰𝚃𝙴.
+𝟸. 𝙼𝙰𝙺𝙴 𝚂𝚄𝚁𝙴 𝚃𝙷𝙰𝚃 𝚈𝙾𝚄𝚁 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝙳𝙾𝙴𝚂 𝙽𝙾𝚃 𝙲𝙾𝙽𝚃𝙰𝙸𝙽𝚂 𝙲𝙰𝙼𝚁𝙸𝙿𝚂, 𝙿𝙾𝚁𝙽 𝙰𝙽𝙳 𝙵𝙰𝙺𝙴 𝙵𝙸𝙻𝙴𝚂.
+𝟹. 𝙵𝙾𝚁𝚆𝙰𝚁𝙳 𝚃𝙷𝙴 𝙻𝙰𝚂𝚃 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 𝚃𝙾 𝙼𝙴 𝚆𝙸𝚃𝙷 𝚀𝚄𝙾𝚃𝙴𝚂.
+ 𝙸'𝙻𝙻 𝙰𝙳𝙳 𝙰𝙻𝙻 𝚃𝙷𝙴 𝙵𝙸𝙻𝙴𝚂 𝙸𝙽 𝚃𝙷𝙰𝚃 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚃𝙾 𝙼𝚈 𝙳𝙱.</b>
+<b>★ /set_template - 𝚂𝙴𝚃 𝙲𝚄𝚂𝚃𝙾𝙼 𝙸𝙼𝙳𝙱 𝚃𝙴𝙼𝙿𝙻𝙰𝚃𝙴 𝙵𝙾𝚁 𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁.</b>
+<b>★ /get_template - 𝙶𝙴𝚃 𝙲𝚄𝚁𝚁𝙴𝙽𝚃 𝙸𝙼𝙳𝙱 𝚃𝙴𝙼𝙿𝙻𝙰𝚃𝙴 𝙾𝙵 𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁.</b>
+<b>★ /autofilter on - 𝙴𝙽𝙰𝙱𝙻𝙴 𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁 𝙸𝙽 𝚃𝙷𝙴 𝙶𝚁𝙾𝚄𝙿𝚂.</b>
+<b>★ /autofilter off - 𝙳𝙸𝚂𝙰𝙱𝙻𝙴𝙳 𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁 𝙸𝙽 𝚃𝙷𝙴 𝙶𝚁𝙾𝚄𝙿𝚂.</b>"""
 
-- ᴜsᴇᴅ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ ʙᴏᴛ ᴛᴏ ᴘᴍ ꜰᴏʀ ᴍᴀɴᴀɢɪɴɢ ꜰɪʟᴛᴇʀs
-- ɪᴛ ʜᴇʟᴘs ᴛᴏ ᴀᴠᴏɪᴅ sᴘᴀᴍᴍɪɴɢ ɪɴ ɢʀᴏᴜᴘs.
+    CONNECTION_TXT = """Help: <b>Connections</b>
 
-ɴᴏᴛᴇ :
-1. ᴏɴʟʏ ᴀᴅᴍɪɴꜱ ᴄᴀɴ ᴀᴅᴅ ᴀ ᴄᴏɴɴᴇᴄᴛɪᴏɴ.
-2. ꜱᴇɴᴅ /connect ꜰᴏʀ ᴄᴏɴɴᴇᴄᴛɪɴɢ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴘᴍ
+- Used to connect bot to PM for managing filters 
+- it helps to avoid spamming in groups.
 
-ᴄᴏᴍᴍᴀɴᴅs  ᴀɴᴅ  ᴜsᴀɢᴇ :
-• /connect  - ᴄᴏɴɴᴇᴄᴛ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴄʜᴀᴛ ᴛᴏ ʏᴏᴜʀ ᴘᴍ
-• /disconnect  - ᴅɪꜱᴄᴏɴɴᴇᴄᴛ ꜰʀᴏᴍ ᴀ ᴄʜᴀᴛ
-• /connections - ʟɪꜱᴛ ᴀʟʟ ʏᴏᴜʀ ᴄᴏɴɴᴇᴄᴛɪᴏɴꜱ."""
+<b>NOTE:</b>
+1. Only admins can add a connection.
+2. Send <code>/connect</code> for connecting me to ur PM
 
-    AUTO_TXT = """ᴇxᴛʀᴀ  ᴍᴏᴅᴜʟᴇꜱ
+<b>Commands and Usage:</b>
+• /connect  - <code>connect a particular chat to your PM</code>
+• /disconnect  - <code>disconnect from a chat</code>
+• /connections - <code>list all your connections</code>"""
 
-ɴᴏᴛᴇ :
-ᴛʜᴇꜱᴇ ᴀʀᴇ ᴛʜᴇ ᴇxᴛʀᴀ ꜰᴇᴀᴛᴜʀᴇꜱ ᴏꜰ ᴛʜɪꜱ ʙᴏᴛ
+    EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
 
-ᴄᴏᴍᴍᴀɴᴅs  ᴀɴᴅ  ᴜsᴀɢᴇ :
+<b>NOTE:</b>
+these are the extra features of Elsa
 
-• /id - ɢᴇᴛ ɪᴅ ᴏꜰ ᴀ ꜱᴘᴇᴄɪꜰɪᴇᴅ ᴜꜱᴇʀ.
-• /info  - ɢᴇᴛ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀ ᴜꜱᴇʀ.
-• /imdb  - ɢᴇᴛ ᴛʜᴇ ꜰɪʟᴍ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ꜰʀᴏᴍ ɪᴍᴅʙ ꜱᴏᴜʀᴄᴇ.
-• /search  - ɢᴇᴛ ᴛʜᴇ ꜰɪʟᴍ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ꜰʀᴏᴍ ᴠᴀʀɪᴏᴜꜱ ꜱᴏᴜʀᴄᴇꜱ."""
+<b>Commands and Usage:</b>
+• /id - <code>get id of a specified user.</code>
+• /info  - <code>get information about a user.</code>
+• /imdb  - <code>get the film information from IMDb source.</code>
+• /search  - <code>get the film information from various sources.</code>"""
 
-    COUNTRY_TXT = """𝗖𝗼𝘂𝗻𝘁𝗿𝘆  𝗜𝗻𝗳𝗼
+    SONG_TXT = """<b>𝚂𝙾𝙽𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙼𝙾𝙳𝚄𝙻𝙴</b>
 
-ᴛʜɪs ᴍᴏᴅᴜʟᴇ ɪs ᴛᴏ ꜰɪɴᴅ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴄᴏᴜɴᴛʀɪᴇs
+<i>𝚂𝙾𝙽𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙼𝙾𝙳𝚄𝙻𝙴, 𝙵𝙾𝚁 𝚃𝙷𝙾𝚂𝙴 𝚆𝙷𝙾 𝙻𝙾𝚅𝙴 𝙼𝚄𝚂𝙸𝙲. 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙵𝙴𝙰𝚃𝚄𝙴 𝙵𝙾𝚁 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙰𝙽𝚈 𝚂𝙾𝙽𝙶 𝚆𝙸𝚃𝙷 𝚂𝚄𝙿𝙴𝚁 𝙵𝙰𝚂𝚃 𝚂𝙿𝙴𝙴𝙳.𝚆𝙾𝚁𝙺𝚂 𝙾𝙽𝙻𝚈 𝙾𝙽 𝙶𝚁𝙾𝚄𝙿𝚂../</i>
 
-➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝:
+<b>𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂</b>
 
-➪ /country India ."""
+⏭️ /song 𝚂𝙾𝙽𝙶 𝙽𝙰𝙼𝙴 
 
-    JSONE_TXT = """JSON
+<b>𝚆𝙾𝚁𝙺𝚂 𝙱𝙾𝚃𝙷 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙿𝙼</b>
+@HORRIDduo"""
 
+    VIDEO_TXT = """𝙷𝙴𝙻𝙿 𝚈𝙾𝚄 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝚅𝙸𝙳𝙴𝙾 𝙵𝚁𝙾𝙼 𝚈𝙾𝚄𝚃𝚄𝙱𝙴.
+• 𝘜𝘴𝘢𝘨𝘦
+𝘠𝘰𝘶 𝘊𝘢𝘯 𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘈𝘯𝘺 𝘝𝘪𝘥𝘦𝘰 𝘍𝘳𝘰𝘮 𝘠𝘰𝘶𝘵𝘶𝘣𝘦
+𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
+• 𝘛𝘺𝘱𝘦 /video or /mp4 𝘈𝘯𝘥 (https://youtu.be/example...)
+• 𝘌𝘹𝘢𝘮𝘱𝘭𝘦:
+<code>/mp4 https://youtu.be/example...</code>
+<code>/video https://youtu.be/example...</code>"""
+
+    TTS_TXT = """Help: <b> TTS 🎤 module:</b>
+Translate text to speech
+<b>Commands and Usage:</b>
+• /tts <text> : convert text to speech"""
+
+    GTRANS_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝖦𝗈𝗈𝗀𝗅𝖾 𝖳𝗋𝖺𝗇𝗌𝗅𝖺𝗍𝖾𝗋
+𝚃𝚑𝚒𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍 𝚑𝚎𝚕𝚙𝚜 𝚢𝚘𝚞 𝚝𝚘 𝚝𝚛𝚊𝚗𝚜𝚕𝚊𝚝𝚎 𝚊 𝚝𝚎𝚡𝚝 𝚝𝚘 𝖺𝗇𝗒 𝚕𝚊𝚗𝚐𝚞𝚊𝚐𝚎𝚜 𝚢𝚘𝚞 𝚠𝚊𝚗𝚝. 𝚃𝚑𝚒𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍 𝚠𝚘𝚛𝚔𝚜 𝚘𝚗 𝚋𝚘𝚝𝚑 𝚙𝚖 𝚊𝚗𝚍 𝚐𝚛𝚘𝚞𝚙 ✯
+➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞:
+➪/tr - 𝖳𝗈 𝗍𝗋𝖺𝗇𝗌𝗅𝖺𝗍𝖾𝗋 𝗍𝖾𝗑𝗍𝗌 𝗍𝗈 𝖺 𝗌𝗉𝖾𝖼𝗂𝖿𝖼 𝗅𝖺𝗇𝗀𝗎𝖺𝗀𝖾
+➤ 𝖭𝗈𝗍𝖾:
+𝖶𝗁𝗂𝗅𝖾 𝗎𝗌𝗂𝗇𝗀 /tr 𝗒𝗈𝗎 𝗌𝗁𝗈𝗎𝗅𝖽 𝗌𝗉𝖾𝖼𝗂𝖿𝗒 𝗍𝗁𝖾 𝗅𝖺𝗇𝗀𝗎𝖺𝗀𝖾 𝖼𝗈𝖽𝖾
+➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾: /𝗍𝗋 𝗆𝗅
+• 𝖾𝗇 = 𝖤𝗇𝗀𝗅𝗂𝗌𝗁
+• 𝗆𝗅 = 𝖬𝖺𝗅𝖺𝗒𝖺𝗅𝖺𝗆
+• 𝗁𝗂 = 𝖧𝗂𝗇𝖽𝗂"""
+
+    TELE_TXT = """<b>▫️HELP: Telegraph▪️</b>
+Do as you wish with telegra.ph module!
+</b>USAGE:</b>
+✒️ /telegraph - Send me Picture or Vide Under (5MB)
+<b>NOTE:</b>
+• This Command Is Available in goups and pms
+• This Command Can be used by everyone"""
+
+    CORONA_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝖢𝗈𝗏𝗂𝖽
+𝚃𝚑𝚒𝚜 𝙲𝚘𝚖𝚖𝚊𝚗𝚍 𝚑𝚎𝚕𝚙𝚜 𝚢𝚘𝚞 𝚝𝚘 𝚔𝚗𝚘𝚠 𝚍𝚊𝚒𝚕𝚢 𝚒𝚗𝚏𝚘𝚛𝚖𝚊𝚝𝚒𝚘𝚗 𝚊𝚋𝚘𝚞𝚝 𝚌𝚘𝚟𝚒𝚍 
+➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞:
+➪ /covid - 𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗐𝗂𝗍𝗁 𝗒𝗈𝗎𝗋 𝖼𝗈𝗎𝗇𝗍𝗋𝗒 𝗇𝖺𝗆𝖾 𝗍𝗈 𝗀𝖾𝗍 𝖼𝗈𝗏𝗂𝖽𝖾 𝗂𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇
+➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
+<code>/covid 𝖨𝗇𝖽𝗂𝖺</code>
+
+⚠️ This feature not available"""
+
+    ABOOK_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝖠𝗎𝖽𝗂𝗈𝖻𝗈𝗈𝗄
+𝚈𝚘𝚞 𝚌𝚊𝚗 𝚌𝚘𝚗𝚟𝚎𝚛𝚝 𝚊 𝙿𝙳𝙵 𝚏𝚒𝚕𝚎 𝚝𝚘 𝚊 𝚊𝚞𝚍𝚒𝚘 𝚏𝚒𝚕𝚎 𝚠𝚒𝚝𝚑 𝚝𝚑𝚒𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍 ✯
+➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞:
+➪ /audiobook: 𝖱𝖾𝗉𝗅𝗒 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗍𝗈 𝖺𝗇𝗒 𝖯𝖣𝖥 𝗍𝗈 𝗀𝖾𝗇𝖾𝗋𝖺𝗍𝖾 𝗍𝗁𝖾 𝖺𝗎𝖽𝗂𝗈"""
+
+    PINGS_TXT = """<b>Ping Testing:</b>
+Helps you to know your ping 🚶🏼‍♂️
+<b>Commands:</b>
+• /alive - To check you are alive.
+• /help - To get help.
+
+• /ping - <b>To get your ping.</b>
+
+<b>🛠️Usage🛠️ :</b>
+• This commands can be used in pm and groups
+• This commands can be used buy everyone in the groups and bots pm
+• Share us for more features"""
+
+    STICKER_TXT = """<b>𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝚃𝙾 𝙵𝙸𝙽𝙳 𝙰𝙽𝚈 𝚂𝚃𝙸𝙲𝙺𝙴𝚁𝚂 𝙸𝙳.</b>
+• 𝐔𝐒𝐀𝐆𝐄
+To Get Sticker ID
+
+  ⭕ 𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
+
+◉ Reply To Any Sticker [/stickerid]"""
+
+    FONT_TXT = """⚙️ 𝐔𝐒𝐀𝐆𝐄
+
+𝐘𝐎𝐔 𝐂𝐀𝐍 𝐔𝐒𝐄 𝐓𝐇𝐈𝐒 𝐌𝐎𝐃𝐔𝐋𝐄 𝐓𝐎 𝐂𝐇𝐀𝐍𝐆𝐄 𝐅𝐎𝐍𝐓 𝐒𝐓𝐘𝐋𝐄 
+
+<b>COMMAND</b> : /font your text (optional)
+        <b> Eg:- /font Hello</b>
+
+ <i>This feature added by @HORRIDduo"""
+    JSON_TXT = """<b>JSON:</b>
 Bot returns json for all replied messages with /json or /js
-
-Features:
+<b>Features:</b>
 Message Editting JSON
 Pm Support
 Group Support
+<b>Note:</b>
+<b>Everyone can use this command , if spaming happens bot will automatically ban you from the group.</b>"""
 
-Note:
-Everyone can use this command , if spaming happens bot will automatically ban you from the group."""
+    WHOIS_TXT = """<b>WHOIS MODULE</b>
+Note:- <b>Give a user details</b>
 
-    PING_TXT= """𝙿𝙸𝙽𝙶 𝙼𝙾𝙳𝚄𝙻𝙴
+•/whois :-give a user full details 📑"""
 
-Helps you to know your ping 🚶🏼‍♂️
- 
-➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝:
+    URLSHORT_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝖴𝗋𝗅 𝗌𝗁𝗈𝗋𝗍𝗇𝖾𝗋
+<i><b>𝚃𝚑𝚒𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍 𝚑𝚎𝚕𝚙𝚜 𝚢𝚘𝚞 𝚝𝚘 𝚜𝚑𝚘𝚛𝚝 𝚊 𝚞𝚛𝚕 </i></b>
+➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞:
+➪ /short: <b>𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗐𝗂𝗍𝗁 𝗒𝗈𝗎𝗋 𝗅𝗂𝗇𝗄 𝗍𝗈 𝗀𝖾𝗍 𝗌𝗁𝗈𝗋𝗍𝖾𝖽 𝗅𝗂𝗇𝗄𝗌</b>
+➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
+<code>/short https://youtu.be/example...</code>"""
 
-• /alive - To check you are alive.
-• /ping - To get your ping."""
+    FUN_TXT = """<b>Gᴀᴍᴇs</b> 
 
-    FONT_TXT = """𝙵𝙾𝙽𝚃 𝙼𝙾𝙳𝚄𝙻𝙴
+<b>⚡ 𝙹𝚄𝚂𝚃 𝚂𝙾𝙼𝙴 𝙺𝙸𝙽𝙳 𝙾𝙵 𝙵𝚄𝙽 𝚃𝙷𝙸𝙽𝙶'𝚂 ⚡</b>
 
-𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝚃𝙾 𝙲𝙷𝙰𝙽𝙶𝙴 𝙵𝙾𝙽𝚃 𝚂𝚃𝚈𝙻𝙴
-
-➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝:
-
-➪ /font [your text]."""
-
-    SONG_TXT = """sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴏᴅᴜʟᴇ
-
-sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴏᴅᴜʟᴇ, ꜰᴏʀ ᴛʜᴏsᴇ ᴡʜᴏ ʟᴏᴠᴇ ᴍᴜsɪᴄ. ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ꜰᴇᴀᴛᴜᴇ ꜰᴏʀ ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴʏ sᴏɴɢ ᴡɪᴛʜ sᴜᴘᴇʀ ꜰᴀsᴛ sᴘᴇᴇᴅ.ᴡᴏʀᴋs ᴏɴʟʏ ᴏɴ ɢʀᴏᴜᴘs..
-
-➤  ᴄᴏᴍᴍᴀɴᴅ
-
-🎶 /song - sᴏɴɢ ɴᴀᴍᴇ
-
-ᴡᴏʀᴋs ʙᴏᴛʜ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘᴍ."""
-
-    TTS_TXT = """ᴛᴛs ᴍᴏᴅᴜʟᴇ
-
-ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴇxᴛ ᴛᴏ sᴘᴇᴇᴄʜ
-
-➤ ᴄᴏᴍᴍᴀɴᴅ
-
-/tts : ᴄᴏɴᴠᴇʀᴛ ᴛᴇxᴛ ᴛᴏ sᴘᴇᴇᴄʜ."""
-
-    TGRAPH_TXT = """ᴛᴇʟᴇɢʀᴀᴘʜ ᴍᴏᴅᴜʟᴇ
-
-ᴛʜɪꜱ ᴍᴏᴅᴜʟᴇ ᴄᴏɴᴠᴇʀᴛᴇʀ ᴀɴʏ ɪᴍᴀɢᴇ ᴏʀ ᴠɪᴅᴇᴏ ɪɴᴛᴏ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ.
-
-➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝:
-
-➪ /telegraph - Picture or Video Under (5MB)."""
-
-    SHARE_TXT = """𝗦𝗛𝗔𝗥𝗘 𝗧𝗘𝗫𝗧
-
-➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 :
-
-• /share - ʀᴇᴘʟʏ ᴡɪᴛʜ ᴀɴʏ ᴛᴇxᴛ ᴛᴏ sᴇɴᴅ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ."""
-
-    WRITE_TXT = """ᴡʀɪᴛᴇ ᴛᴇxᴛ
-
-ʙᴏᴛ ᴡʀɪᴛᴇ ʏᴏᴜʀ ɢɪᴠᴇɴ ᴛᴇxᴛ ᴏɴ ᴡʜɪᴛᴇ ᴘᴀɢᴇ ᴡɪᴛʜ ᴀ ᴘᴇɴ
-
-
-➤  𝐂𝐨𝐦𝐦𝐚𝐧𝐝 :
-
-/write [ ʏᴏᴜʀ ᴛᴇxᴛ ]."""
-
-    STORE_TXT = """ꜰɪʟᴇ ꜱᴛᴏʀᴇ ᴍᴏᴅᴜʟᴇ
-
-» ᴀ ᴍᴏᴅᴜʟᴇ ᴛᴏ ɢᴇᴛ sʜᴀʀᴀʙʟᴇ ʟɪɴᴋ ꜰᴏʀ ᴀɴʏ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ.
-
-ᴄᴏᴍᴍᴀɴᴅs  ᴀɴᴅ  ᴜsᴀɢᴇ:
-
-• /link - ᴛᴏ ᴄʀᴇᴀᴛᴇ ᴀ ꜱɪɴɢʟᴇ ꜰɪʟᴇ ʟɪɴᴋ.
-• /batch - ᴛᴏ ᴄʀᴇᴀᴛᴇ ʟɪɴᴋ ꜰᴏʀ ᴍᴜʟᴛɪᴘʟᴇ ᴍᴇᴅɪᴀ.
-• /plink - ᴊᴜsᴛ ʟɪᴋᴇ /link, ʙᴜᴛ ᴛʜᴇ ꜰɪʟᴇ ᴡɪʟʟ ʙᴇ sᴇɴᴅ ᴡɪᴛʜ ꜰᴏʀᴡᴀʀᴅ ʀᴇsᴛʀɪᴄᴛɪᴏɴ.
-• /pbatch - ᴊᴜsᴛ ʟɪᴋᴇ /batch, ʙᴜᴛ ᴛʜᴇ ꜰɪʟᴇs ᴡɪʟʟ ʙᴇ sᴇɴᴅ ᴡɪᴛʜ ꜰᴏʀᴡᴀʀᴅ ʀᴇsᴛʀɪᴄᴛɪᴏɴs."""
-
-    REPORT_TXT = """ʀᴇᴘᴏʀᴛ 🧑🏻‍✈️  
-
-ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ʜᴇʟᴘs ʏᴏᴜ ᴛᴏ ʀᴇᴘᴏʀᴛ ᴀ ᴍᴇssᴀɢᴇ ᴏʀ ᴀ ᴜsᴇʀs ᴛᴏ ᴛʜᴇ ᴀᴅᴍɪɴs ᴏꜰ ᴛʜᴇ ʀᴇsᴘᴇᴄᴛɪᴠᴇ ɢʀᴏᴜᴘ
-
-
-➤  𝐂𝐨𝐦𝐦𝐚𝐧𝐝 :
-
-/report 𝗈𝗋 @admin - 𝖳𝗈 𝗋𝖾𝗉𝗈𝗋𝗍 𝖺 𝗎𝗌𝖾𝗋 𝗍𝗈 𝗍𝗁𝖾 𝖺𝖽𝗆𝗂𝗇𝗌 (𝗋𝖾𝗉𝗅𝗒 𝗍𝗈 𝖺 𝗆𝖾𝗌𝗌𝖺𝗀𝖾)."""
-
-    GAMES_TXT = """ɢᴀᴍᴇs  ᴍᴏᴅᴜʟᴇ
-    
-🏸 ᴊᴜsᴛ sᴏᴍᴇ ᴋɪɴᴅ ᴏꜰ ꜰᴜɴ ᴛʜɪɴɢ's 🏏
- 
-𝟣. /dice - ʀᴏʟᴇ ᴛʜᴇ ᴅɪᴄᴇ
-𝟤. /Throw ᴏʀ /Dart - ᴛᴏ ᴍᴀᴋᴇ ᴅᴀʀᴛ
-3. /Runs - sᴏᴍᴇ ʀᴀɴᴅᴏᴍ ᴅɪᴀʟᴏɢᴜᴇs
-4. /Goal ᴏʀ /Shoot - ᴛᴏ ᴍᴀᴋᴇ ᴀ ɢᴏᴀʟ ᴏʀ sʜᴏᴏᴛ
-5. /luck ᴏʀ /cownd - sᴘɪɴ ᴀɴᴅ ᴛʀʏ ʏᴏᴜʀ ʟᴜᴄᴋ."""
-
-    OPENAI_TXT= """ᴏᴘᴇɴ ᴀɪ 🪄
-
-ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ʜᴇʟᴘs ʏᴏᴜ ᴛᴏ ꜰɪɴᴅ ꜱᴏʟᴜᴛɪᴏɴ ᴏꜰ ᴀɴʏ ǫᴜᴇꜱᴛɪᴏɴ ᴏʀ ǫᴜᴇʀʏ ᴡɪᴛʜ ᴄʜᴀᴛ ɢᴘᴛ.
-
-
-➤  𝐂𝐨𝐦𝐦𝐚𝐧𝐝 :
-
-/openai - your question."""
-
-    GITHUB_TXT = """ɢɪᴛʜᴜʙ ᴅᴇᴛᴀɪʟs -
-
-ᴡɪᴛʜ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ, ʏᴏᴜ ᴄᴀɴ ꜰɪɴᴅ ᴏᴜᴛ ᴛʜᴇ ꜰᴜʟʟ ᴅᴇᴛᴀɪʟs ᴏꜰ ᴛʜᴇ ɢɪᴛʜᴜʙ ᴀᴄᴄᴏᴜɴᴛ ᴏꜰ ᴀɴʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ ᴏʀ ᴜsᴇʀs ᴡʜᴏ ʜᴀᴠᴇ ᴀᴄᴄᴏᴜɴᴛ
-
-ᴜsᴇ ᴛʜɪs ꜰᴏʀᴍᴀᴛ 👇
-
-/github Username."""
-
-    PASS_TXT = """𝙿𝙰𝚂𝚂𝚆𝙾𝚁𝙳 𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙾𝚁
-
-There Is Nothing To Know More. Send Me The Limit Of Your Password.
-
-- I Will Give The Password Of That Limit.
-
-➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝:
-
-• /genpassword or /genpw 20
-
-NOTE:
-• Only Digits Are Allowed
-• Maximum Allowed Digits Till 84 
-  (I Can't Generate Passwords Above The Length 84)
-• IMDb should have admin privillage.
-• These commands works on both pm and group.
-• These commands can be used by any group member."""
-
-    YTTAGS_TXT = """ꜰᴏʀ ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ ᴛᴀɢs -
-
-ʏᴏᴜ ᴄᴀɴ ꜰɪɴᴅ ᴏᴜᴛ ᴛʜᴇ ᴛᴀɢs ᴏꜰ ᴀɴʏ ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ ᴡɪᴛʜ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ
-
-➤  𝐂𝐨𝐦𝐦𝐚𝐧𝐝 :
-
-/yttags - Reply to a YouTube video."""
-
-    YTTHUMB_TXT = """ʏᴛ-ᴛʜᴜᴍʙ
-
-ʜᴇʟᴘs ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴʏ ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ ᴛʜᴜᴍʙɴᴀɪʟ
-
-
-ᴜsᴇ ᴛʜɪs ꜰᴏʀᴍᴀᴛ 👇 
-
-/ytthumb https://youtu.be/cyp64w6skXM
-."""
+𝟣. /dice - 𝚁𝙾𝙻𝙴 𝚃𝙷𝙴 𝙳𝙸𝙲𝙴 
+𝟤. /Throw 𝗈𝗋 /Dart - 𝚃𝙾 𝙼𝙰𝙺𝙴 𝙳𝙰𝚁𝚃 
+3. /Runs - 𝚂𝙾𝙼𝙴 𝚁𝙰𝙽𝙳𝙾𝙼 𝙳𝙸𝙰𝙻𝙾𝙶𝚄𝙴𝚂 
+4. /Goal or /Shoot - 𝚃𝙾 𝙼𝙰𝙺𝙴 𝙰 𝙶𝙾𝙰𝙻 𝙾𝚁 𝚂𝙷𝙾𝙾𝚃
+5. /luck or /cownd - 𝚂𝙿𝙸𝙽 𝙰𝙽𝙳 𝚃𝚁𝚈 𝚈𝙾𝚄𝚁 𝙻𝚄𝙲𝙺"""
