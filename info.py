@@ -132,7 +132,7 @@ REQUESTED_CHANNEL = int(environ.get('REQUESTED_CHANNEL', '-1002062708890'))
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
 # for chatGPT
-OPENAI_API_KEY = environ.get('OPENAI_API_KEY', "")
+OPENAI_API_KEY = environ.get('OPENAI_API_KEY', "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")
 
 #ask 
 GOOGLE_API_KEY = environ.get('API_KEY', 'AIzaSyASKXFxSjnvHO_k5kibkqf8DOdLjh9G4Hs')
