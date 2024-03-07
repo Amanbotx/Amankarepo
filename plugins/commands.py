@@ -1264,16 +1264,20 @@ async def removetutorial(bot, message):
     await save_group_settings(grpid, 'is_tutorial', False)
     await reply.edit_text(f"<b>ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ʀᴇᴍᴏᴠᴇᴅ ᴛᴜᴛᴏʀɪᴀʟ ʟɪɴᴋ ✅</b>")
 
-Client.on_message(filters.command("grouprule"))
-async def grouprule(bot, message):
+@Client.on_message(filters.command("grp_rules"))
+async def grp_rules(bot, message):
+    if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
+        buttons = [[ InlineKeyboardButton('Bᴜʏ Pʀᴇᴍɪᴜᴍ', url="https://t.me/BOT_OWNER26") ] ]
+    
     chat_type = message.chat.type
     if chat_type == enums.ChatType.PRIVATE:
         return await message.reply_text("♨️ 𝗚𝗥𝗢𝗨𝗣 𝗥𝗨𝗟𝗘𝗦 ♨️\n\n🔹 Sᴇᴀʀᴄʜ Mᴏᴠɪᴇ Wɪᴛʜ Cᴏʀʀᴇᴄᴛ Sᴘᴇʟʟɪɴɢ :\n› ᴀᴠᴀᴛᴀʀ 2009 ✅\n› ᴀᴠᴀᴛᴀʀ ʜɪɴᴅɪ ✅\n› ᴀᴠᴀᴛᴀʀ ᴍᴏᴠɪᴇ ❌\n› ᴀᴠᴀᴛᴀʀ ʜɪɴᴅɪ\nᴅᴜʙʙᴇᴅ..❌\n\n🔹Sᴇᴀʀᴄʜ Wᴇʙ Sᴇʀɪᴇs Iɴ ᴛʜɪs Fᴏʀᴍᴀᴛᴇ :\n› ᴠɪᴋɪɴɢs S01 ✅\n› ᴠɪᴋɪɴɢs S01E01 ✅\n› ᴠɪᴋɪɴɢs S01 ʜɪɴᴅɪ ✅\n› ᴠɪᴋɪɴɢs S01 ʜɪɴᴅɪ ᴅᴜʙʙ. ❌\n› ᴠɪᴋɪɴɢs sᴇᴀsᴏɴ 1 ❌\n› ᴠɪᴋɪɴɢs ᴡᴇʙ sᴇʀɪᴇs❌\n🔹 ᴅᴏɴ'ᴛ ᴅᴏ ᴀɴʏ sᴇʟғ ᴘʀᴏᴍᴏᴛɪᴏɴ.\n\n🔹 ᴅᴏɴ'ᴛ sᴇɴᴅ ᴀɴʏ ᴋɪɴᴅ ᴏғ ᴘʜᴏᴛᴏ, ᴠɪᴅᴇᴏ ᴅᴏᴄᴜᴍᴇɴᴛs, ᴜʀʟ ᴇᴛᴄ..\n\n🔹 ᴅᴏɴ'ᴛ ʀᴇǫᴜᴇsᴛ ᴀɴʏ ᴛʜɪɴɢs ᴏᴛʜᴇʀ ᴛʜᴀɴ ᴍᴏᴠɪᴇ sᴇʀɪᴇs ᴀɴɪᴍᴇs..\n\n⚙️ 𝖭ᴏᴛᴇ :- 𝖠ʟʟ ᴍᴇ𝗌𝗌ᴀɢᴇ𝗌 ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏ-ᴅᴇʟᴇᴛᴇᴅ ᴀғᴛᴇʀ 𝟷𝟶 ᴍɪɴᴜᴛᴇ𝗌 ᴛᴏ ᴀᴠᴏɪᴅ ᴄᴏᴘʏʀɪɢʜᴛ ɪ𝗌𝗌ᴜᴇ𝗌.")
+    if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
+        buttons = [[ InlineKeyboardButton('Bᴜʏ Pʀᴇᴍɪᴜᴍ', url="https://t.me/BOT_OWNER26") ] ]
+    
     elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         grpid = message.chat.id
         title = message.chat.title
-    else:
-        return
   
 
 @Client.on_message(filters.command("restart") & filters.user(ADMINS))
