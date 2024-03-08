@@ -13,7 +13,7 @@ async def ai_generate(client, message):
     user_input = message.text.split()[1:]
 
     if not user_input:
-        await message.reply_text("Please provide your question after /ai")
+        await message.reply_text("Please provide your question after /ask")
         return
 
     user_input = " ".join(user_input)
@@ -65,7 +65,7 @@ async def ai_generate(client, message):
     await message.reply_text(response.text)
     await client.send_message(LOG_CHANNEL, text=f"#google_ai ʀᴇǫᴜᴇsᴛ ғʀᴏᴍ {message.from_user.mention}\nǫᴜᴇʀʏ ɪs:- {user_input}")
     await s.delete()
-@Client.on_message(filters.command("ai") & filters.private)
+@Client.on_message(filters.command("ask") & filters.private)
 async def ai_generate_private(client, message):
   buttons = [[
     InlineKeyboardButton("ɢʀᴏᴜᴘ", url="https://t.me/Amanchatgroup1")
