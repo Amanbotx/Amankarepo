@@ -8,7 +8,7 @@ import google.generativeai as genai
 genai.configure(api_key=GOOGLE_API_KEY)
 # how to get the api key == https://t.me/sd_bots/256 (copy this link and search on telegram)
 
-@Client.on_message(filters.command("ai") & filters.group)
+@Client.on_message(filters.command("ask") & filters.group)
 async def ai_generate(client, message):
     user_input = message.text.split()[1:]
 
@@ -17,8 +17,17 @@ async def ai_generate(client, message):
         return
 
     user_input = " ".join(user_input)
+    s = await message.reply_sticker("CAACAgUAAxkBAAIj-mWlAjaflbkifrOJPnnxp2edkuD-AALPDAACzIApVcg9eEkNQbBGHgQ")
 
-      
+    if user_input.lower() in ["who is your owner", "what is your owner name"]:  
+        buttons = [[
+            InlineKeyboardButton("developer", url="https://t.me/BOT_OWNER26")
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await message.reply_sticker("CAACAgUAAxkBAAIjWGWkDiJW1Dyn6n8CjbbwxExf0FEIAAJyCgACywLBVKKgVw2dk9PbHgQ")
+        await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}", reply_markup=reply_markup)
+        return
+
     generation_config = {
         "temperature": 0.9,
         "top_p": 1,
@@ -59,9 +68,8 @@ async def ai_generate(client, message):
 @Client.on_message(filters.command("ai") & filters.private)
 async def ai_generate_private(client, message):
   buttons = [[
-    InlineKeyboardButton("ɢʀᴏᴜᴘ", url="https://t.me/RUhviiX1txdiOWFl")
+    InlineKeyboardButton("ɢʀᴏᴜᴘ", url="https://t.me/Amanchatgroup1")
   ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await message.reply_sticker("CAACAgUAAxkBAAKRsmXpvGmyAxjdTEhIOQEjg0yvn9FzAAIBAAPBJDExTOWVairA1m8eBA")
+  await message.reply_sticker("CAACAgUAAxkBAAIjWGWkDiJW1Dyn6n8CjbbwxExf0FEIAAJyCgACywLBVKKgVw2dk9PbHgQ")
   await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nᴜsᴇ ᴛʜɪs ғᴇᴀᴛᴜʀᴇ ɪɴ ɢʀᴏᴜᴘ", reply_markup=reply_markup)
-
