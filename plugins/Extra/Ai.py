@@ -18,15 +18,6 @@ async def ai_generate(client, message):
 
     user_input = " ".join(user_input)
 
-    
-    if user_input.lower() in ["who is your owner", "what is your owner name"]:  
-        buttons = [[
-            InlineKeyboardButton("developer", url="https://t.me/RUhviiX1txdiOWFl")
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_sticker("CAACAgUAAxkBAAKRsmXpvGmyAxjdTEhIOQEjg0yvn9FzAAIBAAPBJDExTOWVairA1m8eBA")
-        await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}", reply_markup=reply_markup)
-        return
       
     generation_config = {
         "temperature": 0.9,
