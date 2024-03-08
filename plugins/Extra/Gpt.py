@@ -18,7 +18,8 @@ async def ai_generate(client, message):
        return
 
    user_input = " ".join(user_input)
-       await message.reply_sticker("CAACAgUAAxkBAAKRsmXpvGmyAxjdTEhIOQEjg0yvn9FzAAIBAAPBJDExTOWVairA1m8eBA")
+
+   
   
     if user_input.lower() in ["who is your owner", "what is your owner name"]:  
         buttons = [[
