@@ -14,11 +14,10 @@ async def ai_generate(client, message):
    user_input = message.text.split()[1:]
 
    if not user_input:
-       await message.reply_text("command incomplete provide /gpt hello hi")
+       await message.reply_text("command incomplete provide /gpt2 /gpt3 hello")
        return
 
    user_input = " ".join(user_input)
-
 
    generation_config = {
        "temperature": 0.9,
@@ -61,8 +60,7 @@ async def ai_generate(client, message):
 @Client.on_message(filters.command("gpt"))
 async def ai_generate_private(client, message):
   buttons = [[
-    InlineKeyboardButton("SᑌᑭᑭOᖇT GᖇOᑌᑭ ", url="https://t.me/RUhviiX1txdiOWFl")
+    InlineKeyboardButton("SᑌᑭᑭOᖇT GᖇOᑌᑭ ", url="https://t.me/Amanchatgroup1")
   ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await message.reply_sticker("CAACAgUAAxkBAAKRsmXpvGmyAxjdTEhIOQEjg0yvn9FzAAIBAAPBJDExTOWVairA1m8eBA")
   await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nᴜsᴇ ᴛʜɪs ғᴇᴀᴛᴜʀᴇ ɪn SᑌᑭᑭOᖇT GᖇOᑌᑭ  👇 ", reply_markup=reply_markup)
