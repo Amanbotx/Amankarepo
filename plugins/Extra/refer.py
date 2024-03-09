@@ -7,4 +7,4 @@ async def refer(client,message):
     photo_url = 'https://graph.org/file/f8c26a2bda2c9ca9c6871.jpg'
     await message.reply_text(f"ʜᴇʏ {message.from_user.mention}, \n\nHᴇʀᴇ ɪꜱ ʏᴏᴜʀ ʀᴇғғᴇʀᴀʟ ʟɪɴᴋ:\nhttps://t.me/movie_090_bot?start={message.from_user.id}\n\nShare this link with your friends, Each time they join, You will get 10 refferal points and after 100 points you will get 1 month Premium subscription.\n\nइस लिंक को दोस्तों के साथ Share करें, जब वे शामिल होंगे, तो आपको 10 रेफरल पॉइंट मिलेंगे ,और 100 पॉइंट के बाद आपको 1 महीने की प्रीमियम सदस्यता Automatically मिल जायगी। ",reply_to_message_id = message.id,reply_markup=reply_markup,)
     
-await client.send_photo(chat_id=message.chat.id,photo=photo_url, reply_markup=reply_markup)
+    await client.send_photo(chat_id=message.chat.id,photo=photo_url, reply_markup=reply_markup)
