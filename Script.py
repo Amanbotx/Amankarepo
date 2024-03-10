@@ -253,6 +253,8 @@ Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
 ᴛʜᴀɴᴋ ʏᴏᴜ ꜰᴏʀ ʜᴇʟᴘɪɴɢ ɪɴ ᴛʜɪꜱ ᴀᴍᴀᴢɪɴɢ ʀᴏʟʟᴇʀ ᴄᴏᴀꜱᴛᴇʀ ᴊᴏᴜʀɴᴇʏ 🚀</b>
 """ 
    # PLEASE DO NOT REMOVE ANY CREDITS ❤️‍🩹
+
+    RANJU = """ premium plan jskm zsnsjnsjn """
     
     CAPTION = """ 📂 <i><a href="https://t.me/Moviesofficialchannel0">{file_name}</a></i>\n\n"""
 
