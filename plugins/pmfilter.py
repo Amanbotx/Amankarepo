@@ -1630,6 +1630,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "premium_info":
         buttons = [[
+            InlineKeyboardButton('⚜️ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ɢᴇᴛ ꜰʀᴇᴇ ᴛʀɪᴀʟ', callback_data="give_trial")
+        ],[
             InlineKeyboardButton('🌟 1𝖶𝖾𝖾𝗄 : ₹10 🌟', callback_data='purchase'),
             InlineKeyboardButton('🌟 1𝖬𝗈𝗇𝗍𝗁 : ₹30 🌟', callback_data='purchase')
         ],[
