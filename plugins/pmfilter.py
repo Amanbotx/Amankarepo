@@ -1639,7 +1639,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🌟 6𝖬𝗈𝗇𝗍𝗁 : ₹199 🌟', callback_data='purchase'),
             InlineKeyboardButton('🌟 1𝖸𝖾𝖺𝗋 : ₹389 🌟', callback_data='purchase')
         ],[
-            InlineKeyboardButton('• ᴅɪᴀᴍᴏɴᴅ •', callback_data='other')
+            InlineKeyboardButton('🎀 𝖢𝗎𝗌𝗍𝗈𝗆 𝖯𝗅𝖺𝗇 🎀', callback_data='other')
         ],[            
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
         ]]
@@ -1755,7 +1755,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "other":
         buttons = [[
-            InlineKeyboardButton('☎️ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ', user_id=int(6883904115))
+            InlineKeyboardButton('☎️ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ', user_id=int(5977931010))
         ],[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
         ]]
