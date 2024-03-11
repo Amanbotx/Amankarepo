@@ -1630,16 +1630,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "premium_info":
         buttons = [[
-            InlineKeyboardButton('• ꜰʀᴇᴇ ᴛʀɪᴀʟ •', callback_data='free')
+            InlineKeyboardButton('🌟 1𝖶𝖾𝖾𝗄 : ₹10 🌟', callback_data='purchase'),
+            InlineKeyboardButton('🌟 1𝖬𝗈𝗇𝗍𝗁 : ₹30 🌟', callback_data='purchase')
         ],[
-            InlineKeyboardButton('• ʙʀᴏɴᴢᴇ •', callback_data='broze'),
-            InlineKeyboardButton('• ꜱɪʟᴠᴇʀ •', callback_data='silver')
+            InlineKeyboardButton('🌟 2𝖬𝗈𝗇𝗍𝗁 : ₹60 🌟', callback_data='purchase'),
+            InlineKeyboardButton('🌟 3𝖬𝗈𝗇𝗍𝗁 : ₹120 🌟', callback_data='purchase')
         ],[
-            InlineKeyboardButton('• ɢᴏʟᴅ •', callback_data='gold'),
-            InlineKeyboardButton('• ᴘʟᴀᴛɪɴᴜᴍ •', callback_data='platinum')
+            InlineKeyboardButton('🌟 6𝖬𝗈𝗇𝗍𝗁 : ₹199 🌟', callback_data='purchase'),
+            InlineKeyboardButton('🌟 1𝖸𝖾𝖺𝗋 : ₹389 🌟', callback_data='purchase')
         ],[
-            InlineKeyboardButton('• ᴅɪᴀᴍᴏɴᴅ •', callback_data='diamond'),
-            InlineKeyboardButton('• ᴏᴛʜᴇʀ •', callback_data='other')
+            InlineKeyboardButton('• ᴅɪᴀᴍᴏɴᴅ •', callback_data='other')
         ],[            
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
         ]]
@@ -1756,10 +1756,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "other":
         buttons = [[
             InlineKeyboardButton('☎️ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ', user_id=int(6883904115))
-        ],[
-            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='diamond'),
-            InlineKeyboardButton('7 / 7', callback_data='pagesn1'),
-            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='free')
         ],[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='premium_info')
         ]]
