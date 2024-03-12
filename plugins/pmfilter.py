@@ -1626,9 +1626,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 disable_web_page_preview=True,                  
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💸 ᴄʜᴇᴄᴋᴏᴜᴛ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴꜱ 💸", callback_data='seeplans')]]))
             return    
-
-    
     elif query.data == "premium_info":
+        buttons = [[
+         InlineKeyboardButton('ᴄʟɪᴄᴋ ᴛᴏ ʜᴇʀᴇ', callback_data='aman')
+        ],[            
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
+        ]]
+        
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.PLAN_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+         
+    
+    elif query.data == "aman":
         buttons = [[
             InlineKeyboardButton('⚜️ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ɢᴇᴛ ꜰʀᴇᴇ ᴛʀɪᴀʟ', callback_data="give_trial")
         ],[
@@ -1643,12 +1656,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ],[
             InlineKeyboardButton('🎀 𝖢𝗎𝗌𝗍𝗈𝗆 𝖯𝗅𝖺𝗇 🎀', callback_data='other')
         ],[            
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='premium_info')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.PLAN_TXT.format(query.from_user.mention),
+            text=script.AMANJI_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
