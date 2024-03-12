@@ -291,6 +291,7 @@ Bʏ @TheMovieProviderBot</b>"""
 BOT WORKING PROPERLY"""
 
     #PLANS
+    AMANJI_TXT = """👇sᴇʟᴇᴄᴛ ʏᴏᴜʀ ᴘʟᴀɴ👇"""
 
     PAGE_TXT = """ᴡʜʏ ᴀʀᴇ ʏᴏᴜ ꜱᴏ ᴄᴜʀɪᴏᴜꜱ ⁉️"""
 
