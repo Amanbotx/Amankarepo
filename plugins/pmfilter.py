@@ -1879,7 +1879,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('‼️ ᴅɪꜱᴄʟᴀɪᴍᴇʀ ‼️', callback_data='disclaimer'),
         ], [
-            InlineKeyboardButton('• ᴏᴡɴᴇʀ •', user_id=int(5977931010)),
+            InlineKeyboardButton('• ᴏᴡɴᴇʀ •', callback_data='ownee_info'),
             InlineKeyboardButton('• ꜱᴛᴀᴛꜱ •', callback_data='stats')
         ], [
             InlineKeyboardButton('🛰️ ʀᴇɴᴅᴇʀɪɴɢ ꜱᴛᴀᴛᴜꜱ ☁️',callback_data='rendr')
@@ -1905,6 +1905,29 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+    elif query.data == "owner_info":
+            btn = [[
+                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", user_id=int(5977931010))
+                  ]]
+            reply_markup = InlineKeyboardMarkup(btn)
+            await query.message.edit_text(
+                text="⋘ Pʟᴇᴀsᴇ Wᴀɪᴛ ⋙"
+            )
+            await asyncio.sleep(0.5)
+            await query.message.edit_text(
+                text="⋘ Lᴏᴀᴅɪɴɢ Dᴀᴛᴀ ⋙"
+            )
+            await asyncio.sleep(0.4)
+            await query.message.edit_text(
+                text="⋘ Cᴏᴍᴘʟᴇᴛᴇ! ⋙"
+            )
+            reply_markup = InlineKeyboardMarkup(btn)
+            await query.message.edit_text(
+                text=script.OWNER_INFO,
+                reply_markup=reply_markup,
+                parse_mode=enums.ParseMode.HTML
+            )
     
     
     elif query.data == "aman1":
