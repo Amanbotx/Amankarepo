@@ -1909,28 +1909,32 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "aman":
         buttons = [[
-            InlineKeyboardButton('• FILTER •', callback_data='FILTER'),
-            InlineKeyboardButton('• AUTO •', callback_data='AUTO'),
-            InlineKeyboardButton('• CONNECT •', callback_data='CONNECT'),
-        ],[
-            InlineKeyboardButton('• EXTRA •', callback_data='EXTRA'),
-            InlineKeyboardButton('• SONG •', callback_data='SONG'),
-            InlineKeyboardButton('• TTS •', callback_data='TTS'),
-        ],[
-            InlineKeyboardButton('• T-GRAPH •', callback_data='TGRAPH'),
-            InlineKeyboardButton('• FONT •', callback_data='FONT'),
-            InlineKeyboardButton('• PING •', callback_data='PING')
-        ],[
-            InlineKeyboardButton('• JSONE •', callback_data='JSONE'),
-            InlineKeyboardButton('• ʙʀᴏɴᴢᴇ •', callback_data='broze'),
-            InlineKeyboardButton('• ᴏᴛʜᴇʀ •', callback_data='other')
-        ],[   
-            InlineKeyboardButton('• COUNTRY •', callback_data='COUNTRY'), 
-            InlineKeyboardButton('• G-TRANS •', callback_data='GTRANS'),
-        ],[        
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start'),
-            InlineKeyboardButton("⇋ NEXT ⇋", callback_data="amann")
-        ]]
+            InlineKeyboardButton('📌 ᴘɪɴ', callback_data='pin'),
+            InlineKeyboardButton('🚫 ʙᴀɴ', callback_data='zombies'),
+            InlineKeyboardButton('🔇 ᴍᴜᴛᴇ', callback_data='restric')
+         ], [
+            InlineKeyboardButton('📂 ꜰ-ꜱᴛᴏʀᴇ', callback_data='store_file'),
+            InlineKeyboardButton('🧑‍🎓 ᴅᴇᴘʟᴏʏ', callback_data='deploy'),
+            InlineKeyboardButton('🎲 ɢᴀᴍᴇs', callback_data='fun')
+         ], [
+            InlineKeyboardButton('🔖 ʀᴇᴘᴏʀᴛ', callback_data='filters'),
+            InlineKeyboardButton('🖌️ ᴡʀɪᴛᴇ', callback_data='purgee'),
+            InlineKeyboardButton('♻️ sʜᴀʀᴇ-ᴛᴇxᴛ', callback_data='share_txt')
+         ], [
+            InlineKeyboardButton('🌁 ʏᴛ-ᴛʜᴜᴍʙ', callback_data='ytthumb'),
+            InlineKeyboardButton('📽️ ʏᴛ-ᴠɪᴅ', callback_data='video'),
+            InlineKeyboardButton('🎗️ ʏᴛ-ᴛᴀɢꜱ', callback_data='yttags')
+         ], [
+            InlineKeyboardButton('🎼 ᴀᴜᴅʙᴏᴏᴋ', callback_data='abook'),
+            InlineKeyboardButton('🧑‍💻 ᴏᴡɴᴇʀ', callback_data='nobi'),
+            InlineKeyboardButton('⚜️ ɢᴇɴ-ᴘᴀss', callback_data='gen_pass')
+         ], [
+            InlineKeyboardButton('🤖 ɢɪᴛʜᴜʙ', callback_data='github'),
+            InlineKeyboardButton('2/2', callback_data='nobideveloper'),
+            InlineKeyboardButton('🔎 ᴏᴘᴇɴᴀɪ', callback_data='openai')
+         ], [
+            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='help')
+         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1941,27 +1945,33 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
     elif query.data == "amann":
         buttons = [[
-            InlineKeyboardButton('• FILTER •', callback_data='FILTER'),
-            InlineKeyboardButton('• AUTO •', callback_data='AUTO'),
-            InlineKeyboardButton('• CONNECT •', callback_data='CONNECT'),
-        ],[
-              InlineKeyboardButton('• EXTRA •', callback_data='EXTRA'),
-            InlineKeyboardButton('• SONG •', callback_data='SONG'),
-            InlineKeyboardButton('• TTS •', callback_data='TTS'),
-        ],[
-            InlineKeyboardButton('• T-GRAPH •', callback_data='TGRAPH'),
-            InlineKeyboardButton('• FONT •', callback_data='FONT'),
-            InlineKeyboardButton('• PING •', callback_data='PING')
-        ],[
-            InlineKeyboardButton('• JSONE •', callback_data='JSONE'),
-            InlineKeyboardButton('• ʙʀᴏɴᴢᴇ •', callback_data='broze'),
-            InlineKeyboardButton('• ᴏᴛʜᴇʀ •', callback_data='other')
-        ],[   
-            InlineKeyboardButton('• COUNTRY •', callback_data='COUNTRY'), 
-            InlineKeyboardButton('• G-TRANS •', callback_data='GTRANS'),
-        ],[        
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
-        ]]
+            InlineKeyboardButton('✏️ ᴍᴀɴᴜᴀʟ', callback_data='manuelfilter'),
+            InlineKeyboardButton('🔄 ᴀᴜᴛᴏ', callback_data='autofilter'),
+            InlineKeyboardButton('🖇️ ᴄᴏɴɴᴇᴄᴛ', callback_data='coct')
+         ], [
+            InlineKeyboardButton('📚 ᴇxᴛʀᴀ', callback_data='extra'),
+            InlineKeyboardButton('🎶 sᴏɴɢ', callback_data='song'),
+            InlineKeyboardButton('📯 ᴛᴛs', callback_data='tts')
+         ], [
+            InlineKeyboardButton('🗑️ ᴘᴜʀɢᴇ', callback_data='corona'),
+            InlineKeyboardButton('📸 ᴛ-ɢʀᴀᴘʜ', callback_data='tele'),
+            InlineKeyboardButton('🆎 ꜰᴏɴᴛ', callback_data='font')
+         ], [
+            InlineKeyboardButton('📡 ᴘɪɴɢ', callback_data='pings'),
+            InlineKeyboardButton('🚫 ᴊsᴏɴᴇ', callback_data='json'),
+            InlineKeyboardButton('🎭 sᴛɪᴄᴋ-ɪᴅ', callback_data='sticker')
+         ], [
+            InlineKeyboardButton('❓ ᴡʜᴏɪs', callback_data='whois'),
+            InlineKeyboardButton('♻️ ᴜʀʟ-sʜᴏʀᴛ', callback_data='urlshort'),
+            InlineKeyboardButton('📝 ɢ-ᴛʀᴀɴs', callback_data='gtrans')
+         ], [
+            InlineKeyboardButton('🌍 ᴄᴏᴜɴᴛʀʏ', callback_data='country'),
+            InlineKeyboardButton('1/2', callback_data='nobideveloper'),
+            InlineKeyboardButton('💎 ᴄᴀʀʙᴏɴ', callback_data='carb')
+         ], [
+            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='help2')
+         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
