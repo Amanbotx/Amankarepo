@@ -1938,13 +1938,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.PLAN_TXT.format(query.from_user.mention),
+            text=script.HELP_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
 
             )
-    elif query.data == "amann":
+    elif query.data == "help":
         buttons = [[
+            InlineKeyboardButton('• ʙᴏᴛ ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ •', callback_data='admic')
+        ], [
+            InlineKeyboardButton('• ᴜꜱᴇʀ •', callback_data='users'),
+            InlineKeyboardButton('• ɢʀᴏᴜᴘ •', callback_data='group')
+        ], [
             InlineKeyboardButton('✏️ ᴍᴀɴᴜᴀʟ', callback_data='manuelfilter'),
             InlineKeyboardButton('🔄 ᴀᴜᴛᴏ', callback_data='autofilter'),
             InlineKeyboardButton('🖇️ ᴄᴏɴɴᴇᴄᴛ', callback_data='coct')
@@ -1975,7 +1980,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.PLAN_TXT.format(query.from_user.mention),
+            text=script.HELP_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
 
