@@ -78,7 +78,7 @@ asyncio
 psutil
 qrcode
 google-generativeai
-
+Shortener
 
 
 
