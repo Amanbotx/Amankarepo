@@ -1,4 +1,4 @@
-from info import S_GROUP, OPENAI_API
+from info import SUPPORT_CHAT, OPENAI_API
 from pyrogram import Client, filters, enums
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 import openai
@@ -7,9 +7,9 @@ openai.api_key = OPENAI_API
 
 @Client.on_message(filters.command("gpt3"))
 async def ask_question(client, message):
-    if message.chat.id != S_GROUP:
+    if message.chat.id != SUPPORT_CHAT:
         btn = [[
-            InlineKeyboardButton('Support Group', url="https://telegram.me/NobiDeveloperSupport")
+            InlineKeyboardButton('Support Group', url="https://t.me/Amanchatgroup1")
         ]]
         return await message.reply("This command only working in support group.", reply_markup=InlineKeyboardMarkup(btn))
     try:
