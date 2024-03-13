@@ -469,5 +469,190 @@ special Thanks To ❤️ Developer -
 -Dev [Owner of this bot ]<a href='https://t.me/BOT_OWNER26'>AV</a>
 """
 
+GROUP_TXT = """
+<b>⍟ ᴄʜᴀɴɴᴇʟs ᴀɴᴅ ɢʀᴏᴜᴘs ᴍᴏᴅᴜʟᴇ ⍟</b>
+
+<b>🍿  ᴍᴏᴠɪᴇꜱ ᴄʜᴀɴɴᴇʟ.
+🗣️  ʙᴏᴛ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ.
+🚦  ʙᴏᴛ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ.
+🎬  ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇsᴛɪɴɢ ɢʀᴏᴜᴘ.</b>"""
+
+    WHYJOIN = """
+⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠
+
+Iғ ᴛʜᴇ ɢʀᴏᴜᴘ ᴄᴏᴘʏ ʀɪɢʜᴛ ɪꜱ ʟᴏꜱᴛ , ᴡʜᴇɴ ᴀ ɴᴇᴡ ɢʀᴏᴜᴘ ɪꜱ ꜱᴛᴀʀᴛᴇᴅ, ɪᴛ ᴡɪʟʟ ʙᴇ ɴᴏᴛɪғɪᴇᴅ ᴏɴ ᴛʜɪꜱ ᴄʜᴀɴɴᴇʟ🤥
+"""
+    QINFO = """
+ʜᴇʏ ʙʀᴏ ☻
+
+Cʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛʜᴇ ғɪʟᴇꜱ ʏᴏᴜ ᴡᴀɴᴛ ᴀɴᴅ ꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ⇓⇓
+"""
+    REPRT_MSG = """𝗥𝗲𝗽𝗼𝗿𝘁𝗲𝗱 𝘁𝗼 𝗔𝗱𝗺𝗶𝗻 😊"""
+
+    SONG_TXT = """sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴏᴅᴜʟᴇ
+
+sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴏᴅᴜʟᴇ, ꜰᴏʀ ᴛʜᴏsᴇ ᴡʜᴏ ʟᴏᴠᴇ ᴍᴜsɪᴄ. ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ꜰᴇᴀᴛᴜᴇ ꜰᴏʀ ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴʏ sᴏɴɢ ᴡɪᴛʜ sᴜᴘᴇʀ ꜰᴀsᴛ sᴘᴇᴇᴅ.ᴡᴏʀᴋs ᴏɴʟʏ ᴏɴ ɢʀᴏᴜᴘs..
+
+➤  ᴄᴏᴍᴍᴀɴᴅ
+
+🎶 /song - sᴏɴɢ ɴᴀᴍᴇ
+
+ᴡᴏʀᴋs ʙᴏᴛʜ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘᴍ</b>"""
+
+    VIDEO_TXT ="""<b>ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴏᴅᴜʟᴇ
+
+ʏᴏᴜ ᴄᴀɴ ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴʏ ᴠɪᴅᴇᴏ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ
+
+➤  ᴄᴏᴍᴍᴀɴᴅs
+
+ᴛʏᴘᴇ /video or /mp4
+
+ᴇxᴀᴍᴘʟᴇ :</b>
+
+<code>/mp4 https://youtu.be/0c-i2Lol6LU</code>
+
+<code>/video https://youtu.be/0c-i2Lol6LU</code>"""
+
+    TTS_TXT = """<b>ᴛᴛs ᴍᴏᴅᴜʟᴇ
+
+ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴇxᴛ ᴛᴏ sᴘᴇᴇᴄʜ
+
+➤ ᴄᴏᴍᴍᴀɴᴅ
+
+/tts : ᴄᴏɴᴠᴇʀᴛ ᴛᴇxᴛ ᴛᴏ sᴘᴇᴇᴄʜ</b>"""
+
+    GTRANS_TXT = """<b>𝙶𝙾𝙶𝙶𝙻𝙴 𝚃𝚁𝙰𝙽𝚂𝙻𝙰𝚃𝙴𝚁</b>
+
+𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝙲𝙾𝙽𝚅𝙴𝚁𝚃 𝚃𝙴𝚇𝚃 𝚃𝙾 𝙰 𝚂𝙿𝙴𝙲𝙸𝙵𝙸𝙲 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴.
+
+➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝:
+
+Reply any text with /tr
+
+➤ 𝖤𝗑𝖺𝗆𝗉𝗅𝖾: /𝗍𝗋 𝗆𝗅
+• 𝖾𝗇 = 𝖤𝗇𝗀𝗅𝗂𝗌𝗁
+• 𝗆𝗅 = 𝖬𝖺𝗅𝖺𝗒𝖺𝗅𝖺𝗆
+• 𝗁𝗂 = 𝖧𝗂𝗇𝖽𝗂"""
+
+    TELE_TXT = """<b>ᴛᴇʟᴇɢʀᴀᴘʜ ᴍᴏᴅᴜʟᴇ</b>
+
+ᴛʜɪꜱ ᴍᴏᴅᴜʟᴇ ᴄᴏɴᴠᴇʀᴛᴇʀ ᴀɴʏ ɪᴍᴀɢᴇ ᴏʀ ᴠɪᴅᴇᴏ ɪɴᴛᴏ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ.
+
+➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝:
+
+➪ /telegraph - Picture or Video Under (5MB)
+"""
+
+    CORONA_TXT = """<b>ᴘᴜʀɢᴇ  ᴍᴏᴅᴜʟᴇ
+
+ᴅᴇʟᴇᴛᴇ ᴀ ʟᴏᴛ ᴏꜰ ᴍᴇssᴀɢᴇs ꜰʀᴏᴍ ɢʀᴏᴜᴘs [ ᴀᴅᴍɪɴs ᴏɴʟʏ ] 
+
+➪  /purge - ᴅᴇʟᴇᴛᴇ ᴀʟʟ ᴍᴇssᴀɢᴇs ꜰʀᴏᴍ ᴛʜᴇ ʀᴇᴘʟɪᴇᴅ ᴍᴇssᴀɢᴇ, ᴛᴏ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴍᴇssᴀɢᴇ...</b>"""
+    ABOOK_TXT = """<b>𝙰𝚄𝙳𝙸𝙾𝙱𝙾𝙾𝙺</b>
+
+𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝙲𝙾𝙽𝚅𝙴𝚁𝚃 𝙰 𝙿𝙳𝙵 𝙵𝙸𝙻𝙴 𝙸𝙽𝚃𝙾 𝙰𝚄𝙳𝙸𝙾 𝙵𝙸𝙻𝙴.
+
+➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝:
+
+➪ /audiobook - 𝖱𝖾𝗉𝗅𝗒 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗍𝗈 𝖺𝗇𝗒 𝖯𝖣𝖥"""
+
+    DEPLOY_TXT= """<b>ɪꜰ ʏᴏᴜ ᴀʀᴇ ꜰᴀᴄɪɴɢ ᴀɴʏ ɪssᴜᴇ ɪɴ ᴛʜᴇ ʀᴇᴘᴏ ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ...</b>"""
+   
+    PINGS_TXT = """<b>𝙿𝙸𝙽𝙶 𝙼𝙾𝙳𝚄𝙻𝙴</b>
+
+Helps you to know your ping 🚶🏼‍♂️
+ 
+➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝:
+
+• /alive - To check you are alive.
+• /ping - To get your ping."""
+
+    STICKER_TXT = """<b>𝚂𝚃𝙸𝙲𝙺𝙴𝚁 𝙼𝙾𝙳𝚄𝙻𝙴</b>
+
+𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝚃𝙾 𝙵𝙸𝙽𝙳 𝙰𝙽𝚈 𝚂𝚃𝙸𝙲𝙺𝙴𝚁𝚂 𝙸𝙳.
+
+⭕ 𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
+
+◉ Reply To Any Sticker [ /stickerid ]"""
+
+    FONT_TXT= """<b>𝙵𝙾𝙽𝚃 𝙼𝙾𝙳𝚄𝙻𝙴</b>
+
+𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝚃𝙾 𝙲𝙷𝙰𝙽𝙶𝙴 𝙵𝙾𝙽𝚃 𝚂𝚃𝚈𝙻𝙴
+
+➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝:
+
+➪ /font [your text]"""
+
+    JSON_TXT = """JSON
+
+Bot returns json for all replied messages with /json or /js
+
+<b>Features:</b>
+Message Editting JSON
+Pm Support
+Group Support
+
+<b>Note:</b>
+<b>Everyone can use this command , if spaming happens bot will automatically ban you from the group.</b>"""
+
+    WHOIS_TXT = """<b>𝚆𝙷𝙾𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴</b>
+
+𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝙶𝙸𝚅𝙴 𝚄𝚂𝙴𝚁𝚂 𝙳𝙴𝚃𝙰𝙸𝙻𝚂
+
+➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝:
+➪ Reply any text with /whois"""
+
+    URLSHORT_TXT = """<b>𝚄𝚁𝙻 𝚂𝙷𝙾𝚁𝚃𝙽𝙴𝚁</b>
+
+𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝙷𝙴𝙻𝙿𝚂 𝚈𝙾𝚄 𝚃𝙾 𝚂𝙷𝙾𝚁𝚃 𝙰 𝚄𝚁𝙻
+
+➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝:
+
+➪ /short - 𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗐𝗂𝗍𝗁 𝗒𝗈𝗎𝗋 𝗅𝗂𝗇𝗄 𝗍𝗈 𝗀𝖾𝗍 𝗌𝗁𝗈𝗋𝗍𝖾𝖽 𝗅𝗂𝗇𝗄𝗌"""
+
+    FUN_TXT ="""<b>ɢᴀᴍᴇs  ᴍᴏᴅᴜʟᴇ
+    
+🏸 ᴊᴜsᴛ sᴏᴍᴇ ᴋɪɴᴅ ᴏꜰ ꜰᴜɴ ᴛʜɪɴɢ's 🏏
+ 
+𝟣. /dice - ʀᴏʟᴇ ᴛʜᴇ ᴅɪᴄᴇ
+𝟤. /Throw ᴏʀ /Dart - ᴛᴏ ᴍᴀᴋᴇ ᴅᴀʀᴛ
+3. /Runs - sᴏᴍᴇ ʀᴀɴᴅᴏᴍ ᴅɪᴀʟᴏɢᴜᴇs
+4. /Goal ᴏʀ /Shoot - ᴛᴏ ᴍᴀᴋᴇ ᴀ ɢᴏᴀʟ ᴏʀ sʜᴏᴏᴛ
+5. /luck ᴏʀ /cownd - sᴘɪɴ ᴀɴᴅ ᴛʀʏ ʏᴏᴜʀ ʟᴜᴄᴋ</b>"""
+
+    CON_TXT = """𝗖𝗼𝘂𝗻𝘁𝗿𝘆  𝗜𝗻𝗳𝗼
+
+ᴛʜɪs ᴍᴏᴅᴜʟᴇ ɪs ᴛᴏ ꜰɪɴᴅ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴄᴏᴜɴᴛʀɪᴇs
+
+➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝:
+
+➪ <code>/country India</code>"""
+
+    CARB_TXT = """𝗛𝗘𝗟𝗣 𝗙𝗢𝗥 𝗖𝗔𝗥𝗕𝗢𝗡
+
+𝙲𝙰𝚁𝙱𝙾𝙽 𝙸𝚂 𝙰 𝙵𝙴𝙰𝚃𝚄𝚁𝙴 𝚃𝙾 𝙼𝙰𝙺𝙴 𝚃𝙷𝙴 𝙸𝙼𝙰𝙶𝙴 𝙰𝚂 𝚂𝙷𝙾𝚆𝙽 𝙸𝙽 𝚃𝙷𝙴 𝚃𝙾𝙿 𝚆𝙸𝚃𝙷 𝚈𝙾𝚄𝚁𝙴 𝚃𝙴𝚇𝚃𝚂.
+
+𝙵𝙾𝚁 𝚄𝚂𝙸𝙽𝙶 𝚃𝙷𝙴 𝙼𝙾𝙳𝚄𝙻𝙴 𝙹𝚄𝚂𝚃 𝚂𝙴𝙽𝙳 𝚃𝙷𝙴 𝚃𝙴𝚇𝚃 𝙰𝙽𝙳 𝚁𝙴𝙿𝙻𝚈 𝚃𝙾 𝙸𝚃 𝚆𝙸𝚃𝙷 /carbon 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚃𝙷𝙴 𝙱𝙾𝚃 𝚆𝙸𝙻𝙻 𝚁𝙴𝙿𝙻𝚈 𝚆𝙸𝚃𝙷 𝚃𝙷𝙴 𝙲𝙰𝚁𝙱𝙾𝙽 𝙸𝙼𝙰𝙶𝙴"""
+
+    GEN_PASS = """<b>𝙿𝙰𝚂𝚂𝚆𝙾𝚁𝙳 𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙾𝚁</b>
+
+There Is Nothing To Know More. Send Me The Limit Of Your Password.
+
+- I Will Give The Password Of That Limit.
+
+➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝:
+
+• /genpassword or /genpw 20
+
+NOTE:
+• Only Digits Are Allowed
+• Maximum Allowed Digits Till 84 
+  (I Can't Generate Passwords Above The Length 84)
+• IMDb should have admin privillage.
+• These commands works on both pm and group.
+• These commands can be used by any group member."""
+
+
+
 
 
