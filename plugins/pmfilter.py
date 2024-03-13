@@ -1909,7 +1909,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🎗️ ʏᴛ-ᴛᴀɢꜱ', callback_data='yttags')
          ], [
             InlineKeyboardButton('🎼 ᴀᴜᴅʙᴏᴏᴋ', callback_data='abook'),
-            InlineKeyboardButton('🧑‍💻 ᴏᴡɴᴇʀ', callback_data='nobi'),
+            InlineKeyboardButton('🧑‍💻 ᴏᴡɴᴇʀ', callback_data="owner_info"),
             InlineKeyboardButton('⚜️ ɢᴇɴ-ᴘᴀss', callback_data='gen_pass')
          ], [
             InlineKeyboardButton('🤖 ɢɪᴛʜᴜʙ', callback_data='github'),
