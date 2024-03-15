@@ -172,20 +172,6 @@ async def start(client, message):
             parse_mode=enums.ParseMode.HTML
         )
         return  
-     if len(message.command) == 2 and message.command[1] in ["aman"]:
-        buttons = [[
-                    InlineKeyboardButton('📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ', user_id=int(5977931010))
-                  ],[
-                    InlineKeyboardButton('❌ ᴄʟᴏꜱᴇ ❌', callback_data='close_data')
-                  ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_photo(
-            photo=(SUBSCRIPTION),
-            caption=script.PREPLANS_TXT.format(message.from_user.mention),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-        return  
     data = message.command[1]
     try:
         pre, file_id = data.split('_', 1)
