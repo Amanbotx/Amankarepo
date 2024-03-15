@@ -92,10 +92,11 @@ async def start(client, message):
             return
         btn = [
             [
-                InlineKeyboardButton("❆ Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ ❆", url=invite_link.invite_link),
-                InlineKeyboardButton("❆ Jᴏɪɴ ", url="https://t.me/Latestmoviesupdates0")
+                InlineKeyboardButton("❆ Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ ❆", url=invite_link.invite_link)
             ],[
-                InlineKeyboardButton('🤔 Why Iam Join🤔', callback_data='sinfo')
+                InlineKeyboardButton("❆ Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ ❆"", url="https://t.me/Latestmoviesupdates0")
+            ],[
+                InlineKeyboardButton('🤔 Why Iam Join🤔', callback_data='ainfo')
             ]
             ]
 
@@ -107,7 +108,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_photo(
             chat_id=message.from_user.id,
-            photo="https://graph.org/file/644e3bf6f645552586339.jpg",
+            photo="https://graph.org/file/038b7e4f28034d98d6300.jpg",
             caption="⚠️ Pʟᴇᴀsᴇ ғᴏʟʟᴏᴡ ᴛʜɪs ʀᴜʟᴇ ⚠️\n\nYᴏᴜ ᴡɪʟʟ ʜᴀᴠᴇ ᴛᴏ ᴊᴏɪɴ ᴏᴜʀ ᴏғғɪᴄɪᴀʟ ᴏʀ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ғɪʀsᴛ.\n\n\nTʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ '🔄 Tʀʏ Aɢᴀɪɴ' ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ...",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
