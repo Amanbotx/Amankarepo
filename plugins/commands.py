@@ -94,7 +94,7 @@ async def start(client, message):
             [
                 InlineKeyboardButton("❆ Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ ❆", url=invite_link.invite_link)
             ],[
-                InlineKeyboardButton("❆ Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ ❆"", url="https://t.me/Latestmoviesupdates0")
+                InlineKeyboardButton("❆ Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ ❆", url="https://t.me/Latestmoviesupdates0")
             ],[
                 InlineKeyboardButton('🤔 Why Iam Join🤔', callback_data='ainfo')
             ]
