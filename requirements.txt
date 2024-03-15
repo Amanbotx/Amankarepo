@@ -79,7 +79,10 @@ psutil
 qrcode
 google-generativeai
 Shortener
-
+math
+time
+heroku3
+requests
 
 
 
