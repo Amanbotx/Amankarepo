@@ -6,7 +6,7 @@ import time
 from pyrogram.types import *
 from telegraph import upload_file
 
-@Client.on_message(filters.regex(r"^https://telegra.ph/file/"))
+@Client.on_message(filters.regex(r"^https://graph.org/file/"))
 async def download(client, message):
  try:
     url = message.text
