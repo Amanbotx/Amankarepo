@@ -1905,10 +1905,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⚜️ ɢᴇɴ-ᴘᴀss', callback_data='gen_pass')
          ], [
             InlineKeyboardButton('🤖 ɢɪᴛʜᴜʙ', callback_data='github'),
-            InlineKeyboardButton('2/2', callback_data='nobideveloper'),
+            InlineKeyboardButton('2/3', callback_data='nobideveloper'),
             InlineKeyboardButton('🔎 ᴏᴘᴇɴᴀɪ', callback_data='openai')
          ], [
-            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='help2'),
+            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='help'),
             InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='help3')
          ]]
         
@@ -1921,7 +1921,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     
     
-    elif query.data == "help2":
+    elif query.data == "help3":
         buttons = [[
             InlineKeyboardButton('📌 ᴘɪɴ', callback_data='pin'),
             InlineKeyboardButton('🚫 ʙᴀɴ', callback_data='zombies'),
@@ -1944,10 +1944,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⚜️ ɢᴇɴ-ᴘᴀss', callback_data='gen_pass')
          ], [
             InlineKeyboardButton('🤖 ɢɪᴛʜᴜʙ', callback_data='github'),
-            InlineKeyboardButton('2/2', callback_data='nobideveloper'),
+            InlineKeyboardButton('3/3', callback_data='nobideveloper'),
             InlineKeyboardButton('🔎 ᴏᴘᴇɴᴀɪ', callback_data='openai')
          ], [
-            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='help2')
          ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1985,7 +1985,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('📝 ɢ-ᴛʀᴀɴs', callback_data='gtrans')
          ], [
             InlineKeyboardButton('🌍 ᴄᴏᴜɴᴛʀʏ', callback_data='country'),
-            InlineKeyboardButton('1/2', callback_data='nobideveloper'),
+            InlineKeyboardButton('1/3', callback_data='nobideveloper'),
             InlineKeyboardButton('💎 ᴄᴀʀʙᴏɴ', callback_data='carb')
          ], [
             InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='start'),
