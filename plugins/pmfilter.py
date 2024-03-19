@@ -1923,29 +1923,21 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "help3":
         buttons = [[
-            InlineKeyboardButton('📌 ᴘɪɴ', callback_data='pin'),
-            InlineKeyboardButton('🚫 ʙᴀɴ', callback_data='zombies'),
-            InlineKeyboardButton('🔇 ᴍᴜᴛᴇ', callback_data='restric')
+            InlineKeyboardButton('📌 ᴘɪɴ', callback_data='cc'),
+            InlineKeyboardButton('🚫 ʙᴀɴ', callback_data='insta'),
+            InlineKeyboardButton('🔇 ᴍᴜᴛᴇ', callback_data='image')
          ], [
-            InlineKeyboardButton('📂 ꜰ-ꜱᴛᴏʀᴇ', callback_data='store_file'),
-            InlineKeyboardButton('🧑‍🎓 ᴅᴇᴘʟᴏʏ', callback_data='deploy'),
-            InlineKeyboardButton('🎲 ɢᴀᴍᴇs', callback_data='fun')
+            InlineKeyboardButton('📂 ꜰ-ꜱᴛᴏʀᴇ', callback_data='torrent'),
+            InlineKeyboardButton('🧑‍🎓 ᴅᴇᴘʟᴏʏ', callback_data='system'),
+            InlineKeyboardButton('🎲 ɢᴀᴍᴇs', callback_data='fa')
          ], [
-            InlineKeyboardButton('🔖 ʀᴇᴘᴏʀᴛ', callback_data='filters'),
-            InlineKeyboardButton('🖌️ ᴡʀɪᴛᴇ', callback_data='purgee'),
-            InlineKeyboardButton('♻️ sʜᴀʀᴇ-ᴛᴇxᴛ', callback_data='share_txt')
+            InlineKeyboardButton('🔖 ʀᴇᴘᴏʀᴛ', callback_data='covid'),
+            InlineKeyboardButton('🖌️ ᴡʀɪᴛᴇ', callback_data='tf'),
+            InlineKeyboardButton('♻️ sʜᴀʀᴇ-ᴛᴇxᴛ', callback_data='qrqr')
          ], [
-            InlineKeyboardButton('🌁 ʏᴛ-ᴛʜᴜᴍʙ', callback_data='ytthumb'),
-            InlineKeyboardButton('📽️ ʏᴛ-ᴠɪᴅ', callback_data='video'),
-            InlineKeyboardButton('🎗️ ʏᴛ-ᴛᴀɢꜱ', callback_data='yttags')
-         ], [
-            InlineKeyboardButton('🎼 ᴀᴜᴅʙᴏᴏᴋ', callback_data='abook'),
-            InlineKeyboardButton('🧑‍💻 ᴏᴡɴᴇʀ', callback_data="owner_info"),
-            InlineKeyboardButton('⚜️ ɢᴇɴ-ᴘᴀss', callback_data='gen_pass')
-         ], [
-            InlineKeyboardButton('🤖 ɢɪᴛʜᴜʙ', callback_data='github'),
-            InlineKeyboardButton('3/3', callback_data='nobideveloper'),
-            InlineKeyboardButton('🔎 ᴏᴘᴇɴᴀɪ', callback_data='openai')
+            InlineKeyboardButton('🌁 ʏᴛ-ᴛʜᴜᴍʙ', callback_data='ringtune'),
+            InlineKeyboardButton('📽️ ʏᴛ-ᴠɪᴅ', callback_data='repo'),
+            InlineKeyboardButton('🎗️ ʏᴛ-ᴛᴀɢꜱ', callback_data='tg')
          ], [
             InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='help2')
          ]]
