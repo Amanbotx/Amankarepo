@@ -1881,6 +1881,44 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML
             )
+
+    elif query.data == "help":
+        buttons = [[
+            InlineKeyboardButton('📌 ᴘɪɴ', callback_data='pin'),
+            InlineKeyboardButton('🚫 ʙᴀɴ', callback_data='zombies'),
+            InlineKeyboardButton('🔇 ᴍᴜᴛᴇ', callback_data='restric')
+         ], [
+            InlineKeyboardButton('📂 ꜰ-ꜱᴛᴏʀᴇ', callback_data='store_file'),
+            InlineKeyboardButton('🧑‍🎓 ᴅᴇᴘʟᴏʏ', callback_data='deploy'),
+            InlineKeyboardButton('🎲 ɢᴀᴍᴇs', callback_data='fun')
+         ], [
+            InlineKeyboardButton('🔖 ʀᴇᴘᴏʀᴛ', callback_data='filters'),
+            InlineKeyboardButton('🖌️ ᴡʀɪᴛᴇ', callback_data='purgee'),
+            InlineKeyboardButton('♻️ sʜᴀʀᴇ-ᴛᴇxᴛ', callback_data='share_txt')
+         ], [
+            InlineKeyboardButton('🌁 ʏᴛ-ᴛʜᴜᴍʙ', callback_data='ytthumb'),
+            InlineKeyboardButton('📽️ ʏᴛ-ᴠɪᴅ', callback_data='video'),
+            InlineKeyboardButton('🎗️ ʏᴛ-ᴛᴀɢꜱ', callback_data='yttags')
+         ], [
+            InlineKeyboardButton('🎼 ᴀᴜᴅʙᴏᴏᴋ', callback_data='abook'),
+            InlineKeyboardButton('🧑‍💻 ᴏᴡɴᴇʀ', callback_data="owner_info"),
+            InlineKeyboardButton('⚜️ ɢᴇɴ-ᴘᴀss', callback_data='gen_pass')
+         ], [
+            InlineKeyboardButton('🤖 ɢɪᴛʜᴜʙ', callback_data='github'),
+            InlineKeyboardButton('2/2', callback_data='nobideveloper'),
+            InlineKeyboardButton('🔎 ᴏᴘᴇɴᴀɪ', callback_data='openai')
+         ], [
+            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='help2'),
+            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='help3')
+         ]]
+        
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.HELP_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+
+        )
     
     
     elif query.data == "help2":
