@@ -268,21 +268,15 @@ Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
 ╚══════════════════╝</b>"""
    
     IMDB_TEMPLATE_TXT = """
-<b>ʜᴇʏ {message.from_user.mention}, ʜᴇʀᴇ ɪꜱ ᴛʜᴇ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀ ʏᴏᴜʀ ǫᴜᴇʀʏ {search}.
+<b>Query: {qurey}
+IMDb Data:
+<b>🏷 Title</b>: <a href={url}>{title}</a>
+🎭 Genres: {genres}
+📆 Year: <a href={url}/releaseinfo>{year}</a>
+🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 
+⏰Result Shown in: {remaining_seconds} <i>seconds</i> 🔥</b>"""
 
-🧿 {title}</b>
-
-<b>⭐ {rating} | ⏰ {runtime} Minutes
-📆 {release_date}
-🕵️ {director}
-
-●  {languages}
-●  {genres}
-
-📖 {plot}
-
-💗 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}</b>
-"""
+    
     OWNER_INFO = """
 <b>┏━•❃𓊈𒆜Oᴡɴᴇʀ Dᴇᴛᴀɪʟꜱ𒆜𓊉❃•━┓   
  ◈ ᴛɢ ɴᴀᴍᴇ : ⚝𝗠𝗿.𝗦𝗣𝗜𝗗𝗬⚝
