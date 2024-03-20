@@ -258,6 +258,15 @@ Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
     
     CAPTION = """ 📂 <i><a href="https://t.me/Moviesofficialchannel0">{file_name}</a></i>\n\n"""
 
+    CAPTION = """ 
+<b>══════════════════
+📂 <i><a href="https://t.me/Moviesofficialchannel0">{file_name}</a></i>
+═══════════════════ 
+𝐒𝐔𝐁𝐒𝐂𝐑𝐈𝐁𝐄 𝐇𝐄𝐑𝐄 👇
+╔══════════════════╗         
+    <a href="https://t.me/Latestmoviesupdates0">🔱 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🔱</a>
+╚══════════════════╝</b>"""
+   
     IMDB_TEMPLATE_TXT = """
 <b>ʜᴇʏ {message.from_user.mention}, ʜᴇʀᴇ ɪꜱ ᴛʜᴇ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀ ʏᴏᴜʀ ǫᴜᴇʀʏ {search}.
 
