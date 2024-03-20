@@ -324,14 +324,10 @@ async def start(client, message):
             gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
         else:
             gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
-        m=await message.reply_text("<i>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ <b>YD Aᴜᴛᴏ Bᴏᴛ™</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</i>")
-        await asyncio.sleep(0.4)
-        await m.edit_text("🦋")
-        await asyncio.sleep(0.5)
-        await m.edit_text("⌛️")
-        await asyncio.sleep(0.5)
-        await m.edit_text("<b><i>ꜱᴛᴀʀᴛɪɴɢ...</i></b>")
-        await asyncio.sleep(0.4)
+        m=await message.reply_text("<i>Cʜᴇᴄᴋɪɴɢ Vᴇʀɪғɪᴄᴀᴛɪᴏɴ Sᴛᴀᴛᴜs</i>")
+        await asyncio.sleep(0.6)
+        await m.edit_text("<b><i>🔗Gᴇɴᴇʀᴀᴛɪɴɢ Lɪɴᴋ Pʟᴢ Wᴀɪᴛ...🔗</i></b>")
+        await asyncio.sleep(0.6)
         await m.delete()        
         chat_id = int("-" + file_id.split("-")[1])
         userid = message.from_user.id if message.from_user else None
@@ -347,18 +343,7 @@ async def start(client, message):
                     ]
                 ]
             )
-        )
-        await query.message.edit_text(
-            text="⋘ Pʟᴇᴀsᴇ Wᴀɪᴛ ⋙"
-        )
-        await asyncio.sleep(0.5)
-        await query.message.edit_text(
-            text="⋘ Lᴏᴀᴅɪɴɢ Dᴀᴛᴀ ⋙"
-        )
-        await asyncio.sleep(0.4)
-        await query.message.edit_text(
-            text="⋘ Cᴏᴍᴘʟᴇᴛᴇ! ⋙"
-        )
+        )                            
         await asyncio.sleep(300)
         await k.edit("<b>ʏᴏᴜʀ ᴍᴇꜱꜱᴀɢᴇ ɪꜱ ᴅᴇʟᴇᴛᴇᴅ !\nᴋɪɴᴅʟʏ ꜱᴇᴀʀᴄʜ ᴀɢᴀɪɴ.</b>")
         return
