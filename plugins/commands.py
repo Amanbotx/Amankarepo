@@ -360,15 +360,11 @@ async def start(client, message):
         elif curr_time < 21:
             gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
         else:
-            gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"  
-        m=await message.reply_text("<i>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ <b>YD Aᴜᴛᴏ Bᴏᴛ™</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</i>")
-        await asyncio.sleep(0.4)
-        await m.edit_text("🦋")
-        await asyncio.sleep(0.5)
-        await m.edit_text("⌛️")
-        await asyncio.sleep(0.5)
-        await m.edit_text("<b><i>ꜱᴛᴀʀᴛɪɴɢ...</i></b>")
-        await asyncio.sleep(0.4)
+            gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
+        m=await message.reply_text("<i>Cʜᴇᴄᴋɪɴɢ Vᴇʀɪғɪᴄᴀᴛɪᴏɴ Sᴛᴀᴛᴜs</i>")
+        await asyncio.sleep(0.6)
+        await m.edit_text("<b><i>🔗Gᴇɴᴇʀᴀᴛɪɴɢ Lɪɴᴋ Pʟᴢ Wᴀɪᴛ...🔗</i></b>")
+        await asyncio.sleep(0.6)
         await m.delete()        
         user_id = message.from_user.id
         chat_id = temp.SHORT.get(user_id)
@@ -387,17 +383,7 @@ async def start(client, message):
                     InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="seeplans")
                 ]]
             )
-        )
-        await query.message.edit_text(
-            text="⋘ Pʟᴇᴀsᴇ Wᴀɪᴛ ⋙"
-        )
-        await asyncio.sleep(0.5)
-        await query.message.edit_text(
-            text="⋘ Lᴏᴀᴅɪɴɢ Dᴀᴛᴀ ⋙"
-        )
-        await asyncio.sleep(0.4)
-        await query.message.edit_text(
-            text="⋘ Cᴏᴍᴘʟᴇᴛᴇ! ⋙"
+        
         )
         await asyncio.sleep(600)
         await k.edit("<b>ʏᴏᴜʀ ᴍᴇꜱꜱᴀɢᴇ ɪꜱ ᴅᴇʟᴇᴛᴇᴅ !\nᴋɪɴᴅʟʏ ꜱᴇᴀʀᴄʜ ᴀɢᴀɪɴ.</b>")
@@ -472,15 +458,11 @@ async def start(client, message):
         elif curr_time < 21:
             gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
         else:
-            gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"   
-        m=await message.reply_text("<i>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ <b>YD Aᴜᴛᴏ Bᴏᴛ™</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</i>")
-        await asyncio.sleep(0.4)
-        await m.edit_text("🦋")
-        await asyncio.sleep(0.5)
-        await m.edit_text("⌛️")
-        await asyncio.sleep(0.5)
-        await m.edit_text("<b><i>ꜱᴛᴀʀᴛɪɴɢ...</i></b>")
-        await asyncio.sleep(0.4)
+            gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
+        m=await message.reply_text("<i>Cʜᴇᴄᴋɪɴɢ Vᴇʀɪғɪᴄᴀᴛɪᴏɴ Sᴛᴀᴛᴜs</i>")
+        await asyncio.sleep(0.6)
+        await m.edit_text("<b><i>🔗Gᴇɴᴇʀᴀᴛɪɴɢ Lɪɴᴋ Pʟᴢ Wᴀɪᴛ...🔗</i></b>")
+        await asyncio.sleep(0.6)
         await m.delete()        
         user_id = message.from_user.id
         if temp.SHORT.get(user_id)==None:
@@ -502,18 +484,7 @@ async def start(client, message):
                             InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="seeplans")                            
                         ]
                     ]
-                )
-            )
-            await query.message.edit_text(
-                text="⋘ Pʟᴇᴀsᴇ Wᴀɪᴛ ⋙"
-            )
-            await asyncio.sleep(0.5)
-            await query.message.edit_text(
-                text="⋘ Lᴏᴀᴅɪɴɢ Dᴀᴛᴀ ⋙"
-            )
-            await asyncio.sleep(0.4)
-            await query.message.edit_text(
-                text="⋘ Cᴏᴍᴘʟᴇᴛᴇ! ⋙"
+                
             )
             await asyncio.sleep(600)
             await k.edit("<b>ʏᴏᴜʀ ᴍᴇꜱꜱᴀɢᴇ ɪꜱ ᴅᴇʟᴇᴛᴇᴅ !\nᴋɪɴᴅʟʏ ꜱᴇᴀʀᴄʜ ᴀɢᴀɪɴ.</b>")
