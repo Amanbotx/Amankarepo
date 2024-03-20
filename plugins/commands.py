@@ -340,16 +340,16 @@ async def start(client, message):
             )
         )
         await query.message.edit_text(
-                text="⋘ Pʟᴇᴀsᴇ Wᴀɪᴛ ⋙"
-            )
-            await asyncio.sleep(0.5)
-            await query.message.edit_text(
-                text="⋘ Lᴏᴀᴅɪɴɢ Dᴀᴛᴀ ⋙"
-            )
-            await asyncio.sleep(0.4)
-            await query.message.edit_text(
-                text="⋘ Cᴏᴍᴘʟᴇᴛᴇ! ⋙"
-            )
+            text="⋘ Pʟᴇᴀsᴇ Wᴀɪᴛ ⋙"
+        )
+        await asyncio.sleep(0.5)
+        await query.message.edit_text(
+            text="⋘ Lᴏᴀᴅɪɴɢ Dᴀᴛᴀ ⋙"
+        )
+        await asyncio.sleep(0.4)
+        await query.message.edit_text(
+            text="⋘ Cᴏᴍᴘʟᴇᴛᴇ! ⋙"
+        )
         await asyncio.sleep(300)
         await k.edit("<b>ʏᴏᴜʀ ᴍᴇꜱꜱᴀɢᴇ ɪꜱ ᴅᴇʟᴇᴛᴇᴅ !\nᴋɪɴᴅʟʏ ꜱᴇᴀʀᴄʜ ᴀɢᴀɪɴ.</b>")
         return
@@ -386,16 +386,16 @@ async def start(client, message):
             )
         )
         await query.message.edit_text(
-                text="⋘ Pʟᴇᴀsᴇ Wᴀɪᴛ ⋙"
-            )
-            await asyncio.sleep(0.5)
-            await query.message.edit_text(
-                text="⋘ Lᴏᴀᴅɪɴɢ Dᴀᴛᴀ ⋙"
-            )
-            await asyncio.sleep(0.4)
-            await query.message.edit_text(
-                text="⋘ Cᴏᴍᴘʟᴇᴛᴇ! ⋙"
-            )
+            text="⋘ Pʟᴇᴀsᴇ Wᴀɪᴛ ⋙"
+        )
+        await asyncio.sleep(0.5)
+        await query.message.edit_text(
+            text="⋘ Lᴏᴀᴅɪɴɢ Dᴀᴛᴀ ⋙"
+        )
+        await asyncio.sleep(0.4)
+        await query.message.edit_text(
+            text="⋘ Cᴏᴍᴘʟᴇᴛᴇ! ⋙"
+        )
         await asyncio.sleep(600)
         await k.edit("<b>ʏᴏᴜʀ ᴍᴇꜱꜱᴀɢᴇ ɪꜱ ᴅᴇʟᴇᴛᴇᴅ !\nᴋɪɴᴅʟʏ ꜱᴇᴀʀᴄʜ ᴀɢᴀɪɴ.</b>")
         return
