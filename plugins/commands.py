@@ -325,9 +325,9 @@ async def start(client, message):
         else:
             gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
         m=await message.reply_text("<i>Cʜᴇᴄᴋɪɴɢ Vᴇʀɪғɪᴄᴀᴛɪᴏɴ Sᴛᴀᴛᴜs</i>")
-        await asyncio.sleep(0.6)
+        await asyncio.sleep(0.4)
         await m.edit_text("<b><i>🔗Gᴇɴᴇʀᴀᴛɪɴɢ Lɪɴᴋ Pʟᴢ Wᴀɪᴛ...🔗</i></b>")
-        await asyncio.sleep(0.6)
+        await asyncio.sleep(0.3)
         await m.delete()        
         chat_id = int("-" + file_id.split("-")[1])
         userid = message.from_user.id if message.from_user else None
@@ -362,9 +362,9 @@ async def start(client, message):
         else:
             gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
         m=await message.reply_text("<i>Cʜᴇᴄᴋɪɴɢ Vᴇʀɪғɪᴄᴀᴛɪᴏɴ Sᴛᴀᴛᴜs</i>")
-        await asyncio.sleep(0.6)
+        await asyncio.sleep(0.4)
         await m.edit_text("<b><i>🔗Gᴇɴᴇʀᴀᴛɪɴɢ Lɪɴᴋ Pʟᴢ Wᴀɪᴛ...🔗</i></b>")
-        await asyncio.sleep(0.6)
+        await asyncio.sleep(0.3)
         await m.delete()        
         user_id = message.from_user.id
         chat_id = temp.SHORT.get(user_id)
@@ -460,9 +460,9 @@ async def start(client, message):
         else:
             gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
         m=await message.reply_text("<i>Cʜᴇᴄᴋɪɴɢ Vᴇʀɪғɪᴄᴀᴛɪᴏɴ Sᴛᴀᴛᴜs</i>")
-        await asyncio.sleep(0.6)
+        await asyncio.sleep(0.4)
         await m.edit_text("<b><i>🔗Gᴇɴᴇʀᴀᴛɪɴɢ Lɪɴᴋ Pʟᴢ Wᴀɪᴛ...🔗</i></b>")
-        await asyncio.sleep(0.6)
+        await asyncio.sleep(0.3)
         await m.delete()        
         user_id = message.from_user.id
         if temp.SHORT.get(user_id)==None:
