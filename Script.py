@@ -311,12 +311,12 @@ BOT WORKING PROPERLY"""
     
 🎖️ <u>ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟᴀɴs</u>
 
-● ➛ <code> 1 𝖶𝖾𝖾𝗄 : ₹10 </code> 
-● ➛ <code> 1 𝖬𝗈𝗇𝗍𝗁 : ₹30 </code>
-● ➛ <code> 2 𝖬𝗈𝗇𝗍𝗁 : ₹60 </code>
-● ➛ <code> 3 𝖬𝗈𝗇𝗍𝗁 : ₹120 </code>
-● ➛ <code> 6 𝖬𝗈𝗇𝗍𝗁 : ₹199 </code>
-● ➛ <code> 1 𝖸𝖾𝖺𝗋 : ₹389 </code>
+● 1. ➛ 𝖶𝖾𝖾𝗄 »» ₹10  
+● 1. ➛ 𝖬𝗈𝗇𝗍𝗁 »» ₹30 
+● 2. ➛ 𝖬𝗈𝗇𝗍𝗁 »» ₹60 
+● 3. ➛ 𝖬𝗈𝗇𝗍𝗁 »» ₹120 
+● 6. ➛ 𝖬𝗈𝗇𝗍𝗁 »» ₹199 
+● 1. ➛ 𝖸𝖾𝖺𝗋 »» ₹389
 
 💵 ᴜᴘɪ ɪᴅ - <code>harshal.purohit@paytm</code>
 📸 ǫʀ ᴄᴏᴅᴇ - <a href='https://telegra.ph/Payment-Information-01-03'>ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ꜱᴄᴀɴ</a>
@@ -329,12 +329,12 @@ BOT WORKING PROPERLY"""
     
 🎖️ <u>ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟᴀɴs</u> :
 
-● ➛ <code> 1 𝖶𝖾𝖾𝗄 : ₹10 </code> 
-● ➛ <code> 1 𝖬𝗈𝗇𝗍𝗁 : ₹30 </code>
-● ➛ <code> 2 𝖬𝗈𝗇𝗍𝗁 : ₹60 </code>
-● ➛ <code> 3 𝖬𝗈𝗇𝗍𝗁 : ₹120 </code>
-● ➛ <code> 6 𝖬𝗈𝗇𝗍𝗁 : ₹199 </code>
-● ➛ <code> 1 𝖸𝖾𝖺𝗋 : ₹389 </code>
+● 1. ➛ 𝖶𝖾𝖾𝗄 »» ₹10  
+● 1. ➛ 𝖬𝗈𝗇𝗍𝗁 »» ₹30 
+● 2. ➛ 𝖬𝗈𝗇𝗍𝗁 »» ₹60 
+● 3. ➛ 𝖬𝗈𝗇𝗍𝗁 »» ₹120 
+● 6. ➛ 𝖬𝗈𝗇𝗍𝗁 »» ₹199 
+● 1. ➛ 𝖸𝖾𝖺𝗋 »» ₹389
 
 💵 ᴜᴘɪ ɪᴅ - <code>harshal.purohit@paytm</code>
 📸 ǫʀ ᴄᴏᴅᴇ - <a href='https://telegra.ph/Payment-Information-01-03'>ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ꜱᴄᴀɴ</a>
@@ -453,12 +453,12 @@ BOT WORKING PROPERLY"""
     
 🎖️ <u>ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟᴀɴs</u> :
 
-● ➛ <code> 1 𝖶𝖾𝖾𝗄 : ₹10 </code> 
-● ➛ <code> 1 𝖬𝗈𝗇𝗍𝗁 : ₹30 </code>
-● ➛ <code> 2 𝖬𝗈𝗇𝗍𝗁 : ₹60 </code>
-● ➛ <code> 3 𝖬𝗈𝗇𝗍𝗁 : ₹120 </code>
-● ➛ <code> 6 𝖬𝗈𝗇𝗍𝗁 : ₹199 </code>
-● ➛ <code> 1 𝖸𝖾𝖺𝗋 : ₹389 </code>
+● 1. ➛ 𝖶𝖾𝖾𝗄 »» ₹10  
+● 1. ➛ 𝖬𝗈𝗇𝗍𝗁 »» ₹30 
+● 2. ➛ 𝖬𝗈𝗇𝗍𝗁 »» ₹60 
+● 3. ➛ 𝖬𝗈𝗇𝗍𝗁 »» ₹120 
+● 6. ➛ 𝖬𝗈𝗇𝗍𝗁 »» ₹199 
+● 1. ➛ 𝖸𝖾𝖺𝗋 »» ₹389
 
 💵 ᴜᴘɪ ɪᴅ - <code>harshal.purohit@paytm</code>
 📸 ǫʀ ᴄᴏᴅᴇ - <a href='https://telegra.ph/Payment-Information-01-03'>ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ꜱᴄᴀɴ</a>
