@@ -324,6 +324,15 @@ async def start(client, message):
             gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
         else:
             gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
+        m=await message.reply_text("<i>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ <b>YD Aᴜᴛᴏ Bᴏᴛ™</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</i>")
+        await asyncio.sleep(0.4)
+        await m.edit_text("🦋")
+        await asyncio.sleep(0.5)
+        await m.edit_text("⌛️")
+        await asyncio.sleep(0.5)
+        await m.edit_text("<b><i>ꜱᴛᴀʀᴛɪɴɢ...</i></b>")
+        await asyncio.sleep(0.4)
+        await m.delete()        
         chat_id = int("-" + file_id.split("-")[1])
         userid = message.from_user.id if message.from_user else None
         g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start=allfiles_{file_id}")
@@ -366,7 +375,16 @@ async def start(client, message):
         elif curr_time < 21:
             gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
         else:
-            gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"        
+            gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"  
+        m=await message.reply_text("<i>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ <b>YD Aᴜᴛᴏ Bᴏᴛ™</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</i>")
+        await asyncio.sleep(0.4)
+        await m.edit_text("🦋")
+        await asyncio.sleep(0.5)
+        await m.edit_text("⌛️")
+        await asyncio.sleep(0.5)
+        await m.edit_text("<b><i>ꜱᴛᴀʀᴛɪɴɢ...</i></b>")
+        await asyncio.sleep(0.4)
+        await m.delete()        
         user_id = message.from_user.id
         chat_id = temp.SHORT.get(user_id)
         files_ = await get_file_details(file_id)
@@ -469,7 +487,16 @@ async def start(client, message):
         elif curr_time < 21:
             gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
         else:
-            gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"        
+            gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"   
+        m=await message.reply_text("<i>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ <b>YD Aᴜᴛᴏ Bᴏᴛ™</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</i>")
+        await asyncio.sleep(0.4)
+        await m.edit_text("🦋")
+        await asyncio.sleep(0.5)
+        await m.edit_text("⌛️")
+        await asyncio.sleep(0.5)
+        await m.edit_text("<b><i>ꜱᴛᴀʀᴛɪɴɢ...</i></b>")
+        await asyncio.sleep(0.4)
+        await m.delete()        
         user_id = message.from_user.id
         if temp.SHORT.get(user_id)==None:
             return await message.reply_text(text="<b>Please Search Again in Group</b>")
