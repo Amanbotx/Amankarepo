@@ -1616,6 +1616,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "give_trial_efer":
             await query.answer("🚸 ʏᴏᴜ'ᴠᴇ ᴀʟʀᴇᴀᴅʏ ᴄʟᴀɪᴍᴇᴅ ʏᴏᴜʀ ꜰʀᴇᴇ ᴛʀɪᴀʟ ᴏɴᴄᴇ !\n\n📌 ᴄʜᴇᴄᴋᴏᴜᴛ ᴏᴜʀ ᴘʟᴀɴꜱ ʙʏ : /plan", show_alert=True)
             return
+
+    elif query.data == "ainfo":
+            await query.answer("! Read Carefully! IF BOT OR\nGROUP GOT BAN FROM\nCOPYRIGHTS THEN YOU\nWILL GET THE NEW ONE\nFROM THAT CHANNEL.", show_alert=True)
+            return
         
     elif query.data == "premium_info":
         buttons = [[
