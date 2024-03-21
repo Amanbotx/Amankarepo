@@ -363,7 +363,7 @@ async def start(client, message):
             gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
         m=await message.reply_text("<i>Cʜᴇᴄᴋɪɴɢ Vᴇʀɪғɪᴄᴀᴛɪᴏɴ Sᴛᴀᴛᴜs</i>")
         await asyncio.sleep(0.4)
-        await m.edit_text("<b><i>🔗Gᴇɴᴇʀᴀᴛɪɴɢ Fɪʟᴇꜱ Pʟᴢ Wᴀɪᴛ...🔗</i></b>")
+        await m.edit_text("<b><i>🔗Gᴇɴᴇʀᴀᴛɪɴɢ Lɪɴᴋ Pʟᴢ Wᴀɪᴛ...🔗</i></b>")
         await asyncio.sleep(0.3)
         await m.delete()        
         user_id = message.from_user.id
@@ -385,7 +385,7 @@ async def start(client, message):
             )
         
         )
-        await asyncio.sleep(600)
+        await asyncio.sleep(60)
         await k.edit("<b>ʏᴏᴜʀ ᴍᴇꜱꜱᴀɢᴇ ɪꜱ ᴅᴇʟᴇᴛᴇᴅ !\nᴋɪɴᴅʟʏ ꜱᴇᴀʀᴄʜ ᴀɢᴀɪɴ.</b>")
         return
         
@@ -461,7 +461,7 @@ async def start(client, message):
             gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
         m=await message.reply_text("<i>Cʜᴇᴄᴋɪɴɢ Vᴇʀɪғɪᴄᴀᴛɪᴏɴ Sᴛᴀᴛᴜs</i>")
         await asyncio.sleep(0.4)
-        await m.edit_text("<b><i>🔗Gᴇɴᴇʀᴀᴛɪɴɢ Lɪɴᴋ Pʟᴢ Wᴀɪᴛ...🔗</i></b>")
+        await m.edit_text("<b><i>🔗Gᴇɴᴇʀᴀᴛɪɴɢ Fɪʟᴇꜱ Pʟᴢ Wᴀɪᴛ....🔗</i></b>")
         await asyncio.sleep(0.3)
         await m.delete()        
         user_id = message.from_user.id
