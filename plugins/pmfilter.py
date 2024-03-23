@@ -163,14 +163,7 @@ async def next_page(bot, query):
                 InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
                 InlineKeyboardButton("Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
             ]
-        )
-        btn.insert(0, [
-            InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
-            InlineKeyboardButton('✨ ʙᴜʏ ✨', callback_data="seeplans")
-        ])
-        btn.insert(0, [
-            InlineKeyboardButton("⛔️  ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ​ ⛔️", url="https://youtube.com/@NobiDeveloper")
-        ])
+         )
     else:
         btn = []
         btn.insert(0, 
@@ -180,13 +173,7 @@ async def next_page(bot, query):
                 InlineKeyboardButton("Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
             ]
         )
-        btn.insert(0, [
-            InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
-            InlineKeyboardButton('✨ ʙᴜʏ ✨', callback_data="seeplans")
-        ])
-        btn.insert(0, [
-            InlineKeyboardButton("⛔️  ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ​ ⛔️", url="https://youtube.com/@NobiDeveloper")
-        ])
+        
     try:
         if settings['max_btn']:
             if 0 < offset <= 10:
@@ -398,13 +385,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
             ]
         )
-        btn.insert(0, [
-            InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
-            InlineKeyboardButton('✨ ʙᴜʏ ✨', callback_data="seeplans")
-        ])
-        btn.insert(0, [
-            InlineKeyboardButton("⛔️  ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ​ ⛔️", url="https://youtube.com/@NobiDeveloper")
-        ])
+        
     else:
         btn = []
         btn.insert(0, 
@@ -414,13 +395,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
             ]
         )
-        btn.insert(0, [
-            InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
-            InlineKeyboardButton('✨ ʙᴜʏ ✨', callback_data="seeplans")
-        ])
-        btn.insert(0, [
-            InlineKeyboardButton("⛔️  ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ​ ⛔️", url="https://youtube.com/@NobiDeveloper")
-        ])
+        
 
     if offset != "":
         try:
@@ -561,13 +536,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
             ]
         )
-        btn.insert(0, [
-            InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
-            InlineKeyboardButton('✨ ʙᴜʏ ✨', callback_data="seeplans")
-        ])
-        btn.insert(0, [
-            InlineKeyboardButton("⛔️  ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ​ ⛔️", url="https://youtube.com/@NobiDeveloper")
-        ])
+        
     else:
         btn = []
         btn.insert(0, 
@@ -577,13 +546,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
             ]
         )
-        btn.insert(0, [
-            InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
-            InlineKeyboardButton('✨ ʙᴜʏ ✨', callback_data="seeplans")
-        ])
-        btn.insert(0, [
-            InlineKeyboardButton("⛔️  ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ​ ⛔️", url="https://youtube.com/@NobiDeveloper")
-        ])
+        
 
     if offset != "":
         try:
@@ -745,13 +708,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             ]
             for file in files
         ]
-        btn.insert(0, [
-            InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
-            InlineKeyboardButton('✨ ʙᴜʏ ✨', callback_data="seeplans")
-        ])
-        btn.insert(0, [
-            InlineKeyboardButton("⛔️  ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ​ ⛔️", url="https://youtube.com/@NobiDeveloper")
-        ])
+        
     else:
         btn = []
         btn.insert(0, 
@@ -761,13 +718,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
             ]
         )
-        btn.insert(0, [
-            InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
-            InlineKeyboardButton('✨ ʙᴜʏ ✨', callback_data="seeplans")
-        ])
-        btn.insert(0, [
-            InlineKeyboardButton("⛔️  ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ​ ⛔️", url="https://youtube.com/@NobiDeveloper")
-        ])
+        
         
     offset = 0
 
@@ -2892,13 +2843,7 @@ async def auto_filter(client, msg, spoll=False):
                 InlineKeyboardButton("Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
             ]
         )
-        btn.insert(0, [
-            InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
-            InlineKeyboardButton('✨ ʙᴜʏ ✨', callback_data="seeplans")
-        ])
-        btn.insert(0, [
-            InlineKeyboardButton("⛔️  ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ​ ⛔️", url="https://youtube.com/@NobiDeveloper")
-        ])
+        
     else:
         btn = []
         btn.insert(0, 
@@ -2908,13 +2853,7 @@ async def auto_filter(client, msg, spoll=False):
                 InlineKeyboardButton("Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
             ]
         )
-        btn.insert(0, [
-            InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
-            InlineKeyboardButton('✨ ʙᴜʏ ✨', callback_data="seeplans")
-        ])
-        btn.insert(0, [
-            InlineKeyboardButton("⛔️  ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ​ ⛔️", url="https://youtube.com/@NobiDeveloper")
-        ])
+        
     if offset != "":
         req = message.from_user.id if message.from_user else 0
         try:
