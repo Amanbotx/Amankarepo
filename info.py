@@ -27,7 +27,7 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/705674af7f7714ec8
 SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/705674af7f7714ec8c2d2.jpg")
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://telegra.ph/file/734170f40b8169830d821.jpg'))
 CODE = (environ.get('CODE', 'https://graph.org/file/e7679fda106d6c7599088.jpg'))
-    EMOJIS = [
+EMOJIS = [
         "👍", "👎", "❤", "🔥", 
         "🥰", "👏", "😁", "🤔",
         "🤯", "😱", "🤬", "😢",
