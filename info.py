@@ -27,7 +27,58 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/705674af7f7714ec8
 SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/705674af7f7714ec8c2d2.jpg")
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://telegra.ph/file/734170f40b8169830d821.jpg'))
 CODE = (environ.get('CODE', 'https://graph.org/file/e7679fda106d6c7599088.jpg'))
+    EMOJIS = [
+        "👍", "👎", "❤", "🔥", 
+        "🥰", "👏", "😁", "🤔",
+        "🤯", "😱", "🤬", "😢",
+        "🎉", "🤩", "🤮", "💩",
+        "🙏", "👌", "🕊", "🤡",
+        "🥱", "🥴", "😍", "🐳",
+        "❤‍🔥", "🌚", "🌭", "💯",
+        "🤣", "⚡", "🍌", "🏆",
+        "💔", "🤨", "😐", "🍓",
+        "🍾", "💋", "🖕", "😈",
+        "😴", "😭", "🤓", "👻",
+        "👨‍💻", "👀", "🎃", "🙈",
+        "😇", "😨", "🤝", "✍",
+        "🤗", "🫡", "🎅", "🎄",
+        "☃", "💅", "🤪", "🗿",
+        "🆒", "💘", "🙉", "🦄",
+        "😘", "💊", "🙊", "😎",
+        "👾", "🤷‍♂", "🤷", "🤷‍♀",
+        "😡"
+    ]
 
+LOGGER_INFO_JSON = {
+    'version': 1,
+    'formatters': {
+        'default': {
+            'format': '[%(asctime)s][%(name)s][%(levelname)s] -> %(message)s',
+            'datefmt': '%d/%m/%Y %H:%M:%S'
+        },
+    },
+    'handlers': {
+        'file_handler': {
+            'class': 'logging.FileHandler',
+            'filename': 'event-log.txt',
+            'formatter': 'default'
+        },
+        'stream_handler': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'default'
+        }
+    },
+    'loggers': {
+        'bot': {
+            'level': 'INFO',
+            'handlers': ['file_handler', 'stream_handler']
+        },
+        'pyrogram': {
+            'level': 'INFO',
+            'handlers': ['file_handler', 'stream_handler']
+        }
+    }
+}
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', ''))
 STREAM_API = (environ.get('STREAM_API', ''))
