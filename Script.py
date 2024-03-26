@@ -269,13 +269,10 @@ Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
 ╚══════════════════╝</b>"""
    
     IMDB_TEMPLATE_TXT = """
-<b>Query: {qurey}
-IMDb Data:
 <b>🏷 Title</b>: <a href={url}>{title}</a>
 🎭 Genres: {genres}
 📆 Year: <a href={url}/releaseinfo>{year}</a>
-🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 
-⏰Result Shown in: {remaining_seconds} <i>seconds</i> 🔥</b>"""
+🌟 Rating: <a href={url}/ratings>{rating}</a> / 10</b>"""
 
     
     OWNER_INFO = """
