@@ -1881,22 +1881,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     
     elif query.data == "help3":
-        buttons = [[
-            InlineKeyboardButton('📌 ᴘɪɴ', callback_data='cc'),
-            InlineKeyboardButton('🚫 ʙᴀɴ', callback_data='insta'),
-            InlineKeyboardButton('🔇 ᴍᴜᴛᴇ', callback_data='image')
+       buttons = [[
+            InlineKeyboardButton('ᴀᴛᴍ ᴄᴀʀᴅ', callback_data='cc'),
+            InlineKeyboardButton('Iɴsᴛᴀɢʀᴀᴍ', callback_data='insta'),
+            InlineKeyboardButton('sᴇᴀʀᴄʜ ɪᴍᴀɢᴇ', callback_data='image')
          ], [
-            InlineKeyboardButton('📂 ꜰ-ꜱᴛᴏʀᴇ', callback_data='torrent'),
-            InlineKeyboardButton('🧑‍🎓 ᴅᴇᴘʟᴏʏ', callback_data='system'),
-            InlineKeyboardButton('🎲 ɢᴀᴍᴇs', callback_data='fa')
+            InlineKeyboardButton('ᴛᴏʀʀᴇɴᴛ', callback_data='torrent'),
+            InlineKeyboardButton('sʏsᴛᴇᴍ', callback_data='system'),
+            InlineKeyboardButton('ғᴇᴇᴅʙᴀᴄᴋ', callback_data='fa')
          ], [
-            InlineKeyboardButton('🔖 ʀᴇᴘᴏʀᴛ', callback_data='covid'),
-            InlineKeyboardButton('🖌️ ᴡʀɪᴛᴇ', callback_data='tf'),
-            InlineKeyboardButton('♻️ sʜᴀʀᴇ-ᴛᴇxᴛ', callback_data='qrqr')
+            InlineKeyboardButton('ᴄᴏᴠɪᴅ', callback_data='covid'),
+            InlineKeyboardButton('ᴛ𝟸ғ', callback_data='tf'),
+            InlineKeyboardButton('ǫʀ', callback_data='qrqr')
          ], [
-            InlineKeyboardButton('🌁 ʏᴛ-ᴛʜᴜᴍʙ', callback_data='ringtune'),
-            InlineKeyboardButton('📽️ ʏᴛ-ᴠɪᴅ', callback_data='repo'),
-            InlineKeyboardButton('🎗️ ʏᴛ-ᴛᴀɢꜱ', callback_data='tg')
+            InlineKeyboardButton('ʀɪɴɢᴛᴜɴᴇ', callback_data='ringtune'),
+            InlineKeyboardButton('ʀᴇᴘᴏ', callback_data='repo'),
+            InlineKeyboardButton('sᴇᴀʀᴄʜ sᴛɪᴄᴋᴇʀ', callback_data='tg')
          ], [
             InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='help2')
          ]]
